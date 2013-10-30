@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sports Viz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <style>
+            
+            body{
+              margin-top: 60px;
+                background-color:#ffffff;
+                width: 80%;
+                margin-left:auto;
+                margin-right:auto;
+                
+            }
+            
+            footer{
+                padding-top:5px;
+                padding-left:11px;
+                padding-right:11px;
+                padding-bottom:11px;
+                color: #000000;
+            }
+            
+           #chartOptions{
+            margin-top: 80px;
+           }
+            
+           #menubar-contents{
+            margin-left: 10px;
+           }
+            
+            #mainFrame{
+              /*background-color: #ffffff;*/
+              padding-bottom: 0px;
+              
+              
+            }
+            
+            #mainFrame playerHeader{
+              /*background-color: #ffffff;*/
+              padding-top: 0px;
+              
+            }
+            
+            #chartOptions button{
+              width:150px;
+            }
+            
+            #break{
+                border-bottom: solid 1px;
+            }
+            
+            #buffer{
+                /*background-image: -webkit-linear-gradient(top,#dddddd,#000000);
+                background-image: -moz-linear-gradient(top,#dddddd,#000000);*/
+                height:6px;
+            }
+           
+            @media (max-width: 480px) {
+               body{
+                width: 100%;
+               }
+               
+               #about p{
+                width: 100%;
+                }
+            
+                #break{
+                    border-bottom: solid 1px;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                #workbox{
+                    width: auto;
+                    margin-right: 24px;
+                }
+            }
+          
+            
+        </style>
+        
+  
+  
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="./playerNew.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
+    <script type="text/javascript" src="./typeahead.js"></script>
+    
+    <script type="text/javascript" src="bootstrap-select.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-select.css">
+    
+    <script type="text/javascript">
+        $(window).on('load', function () {
+
+            $('.selectpicker').selectpicker({
+                'selectedText': 'cat'
+            });
+
+            // $('.selectpicker').selectpicker('hide');
+        });
+    </script>
+    
+  </head>
+  
+  <!--<div class="navbar navbar-fixed-top navbar-inverse" id="menubar" role="navigation">
+        <div class="navbar-inner">
+            
+            <ul class="nav" id="menubar-contents">
+              <a class="brand" href="./index.html">SportsViz</a>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Michigan Tech Hockey<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./stats.html">Team at a glance</a></li>
+                        <li><a href="./player.html">Players</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>-->
+    
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="./index.html">SportsViz</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Michigan Tech Hockey <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="./stats.html">Team at a glance</a></li>
+          <li><a href="./player.html">Players</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+  
+<body data-spy="scroll" data-target="#menubar" onload="init()">
+    
+    <!--<ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#points" data-toggle="tab">Points</a></li>
+              <li><a href="#player" data-toggle="tab">Player</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade in active" id="points">
+                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+              </div>
+              <div class="tab-pane fade" id="player">
+                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+              </div>
+
+            </div>-->
+  <div class="container" id="mainFrame">
+    <div class="row">
+  <div class="col-md-6">
+    <h1 id="playerName" >Player Name <small>MTU</small></h1>
+  </div>
+  <div class="col-md-6">
+    <form class="form-horizontal" role="form" style="width:150px;">
+            <div class="form-group">
+                    <select id="playerSearch" class="selectpicker show-tick form-control" multiple data-live-search="false" onchange="updateViz()">
+                        <optgroup label="Defense">
+                          <option>Jimmy Davis</option>
+                          <option>Justin Fillion</option>
+                          <option>Shane Hanna</option>
+                          <option>Walker Hyland</option>
+                          <option>Chris Leibinger</option>
+                          <option>Daniel Sova</option>
+                          <option>Brad Stebner</option>
+                          <option>Riley Sweeney</option>
+                          <option>Cliff Watson</option>
+                        </optgroup>
+                        <optgroup label="Forwards">
+                            <option>Patrick Anderson</option>
+                            <option>Brent Baltus</option>
+                            <option>Cj Eick</option>
+                            <option>Ryan Furne</option>
+                            <option>Malcolm Gould</option>
+                            <option>Tyler Heinonen</option>
+                            <option>Blake Hietala</option>
+                            <option>Daniel Holmberg</option>
+                            <option>David Johnstone</option>
+                            <option>Jacob Johnstone</option>
+                            <option>Tanner Kero</option>
+                            <option>Mike Neville</option>
+                            <option>Alex Petan</option>
+                            <option>Blake Pietila</option>
+                            <option>Dennis Rix</option>
+                            <option>Reid Sturos</option>
+                            <option>Max Vallis</option>
+                        </optgroup>
+                        <optgroup label="Goalies">
+                          <option>Pheonix Copley</option>
+                          <option>Jamie Phillips</option>
+                          <option>Matt Wintjes</option>
+                        </optgroup>
+                    </select>
+            </div>
+        </form>
+    <!-- Button trigger modal -->
+  <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Graph Options</a>
+  </div>
+</div>
+    
+    
+      <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="modalTitle">Chart Options</h4>
+          </div>
+          <div class="modal-body">
+          
+            <div class="btn-group" data-toggle="buttons" id="statOptions">
+              <label class="btn btn-primary">
+                <input type="checkbox" value="Points" id="points"> Points
+              </label>
+              <label class="btn btn-primary">
+                <input type="checkbox" value="Goals" id="goals" checked> Goals
+              </label>
+              <label class="btn btn-primary">
+                <input type="checkbox" value="Assists" id="assists" checked> Assists
+              </label>
+              <label class="btn btn-primary">
+                <input type="checkbox" value="PIMS" id="pims"> Penalty Minutes
+              </label>
+              <label class="btn btn-primary">
+                <input type="checkbox" value="PPG" id="ppg"> Powerplay Goals
+              </label>
+              <label class="btn btn-primary">
+                <input type="checkbox" value="SHG" id="shg"> Shorthanded Goals
+              </label>
+              <label class="btn btn-primary">
+                <input type="checkbox" value="ENG" id="eng"> ENG
+              </label>
+              <label class="btn btn-primary">
+                <input type="checkbox" value="GWG" id="gwg"> GWG
+              </label>
+              <label class="btn btn-primary">
+                <input type="checkbox" value="GTG" id="gtg"> GTG
+              </label>
+              <label class="btn btn-primary">
+                <input type="checkbox" value="Shots" id="shots"> Shots
+              </label>
+            </div>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="update()">Save changes</button>
+        </div>
+        </div><!-- /.modal-content -->
+     </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+  </div>
+    <!--<div class="span2 offset1">
+      <button class="btn btn-primary" onclick="drawVisualization2()">Submit</button>
+    </div>-->
+  </div> 
+  <div class="container"  style="align: center; width: 100%; height: 600px;">
+    <!--<div class="span2">
+      <div class="btn-group btn-group-vertical" data-toggle="buttons-checkbox" id="chartOptions">
+       <button class="btn" id="Points">Points</button>
+        <button class="btn" id="Goals">Goals</button>
+        <button class="btn" id="Assists">Assists</button>
+        <button class="btn" id="PIMS">Penalty Minutes</button>
+        <button class="btn" id="PPG">Powerplay Goals</button>
+        <button class="btn" id="SHG">Shorthanded Goals</button>
+        <button class="btn" id="ENG">ENG</button>
+        <button class="btn" id="GWG">GWG</button>
+        <button class="btn" id="GTG">GTG</button>
+        <button class="btn" id="Shots">Shots</button>
+      </div>
+    </div>
+    <div class="span10">-->
+      <div class="container-fluid" id="visualization_div" style="align: center; width: 100%; height: 600px;"></div>
+    <!--</div>-->
+  </div>
+  
+ 
+ 
+
+ 
+ 
+    
+  </body>
+ <div id="buffer"></div>
+  <footer>
+    <center>
+    Baja Enterprises<br>
+    <small><font color="#8f8f8f">engineering | design | development</font></small><br>
+    </center>
+  </footer>
+  
+</html>

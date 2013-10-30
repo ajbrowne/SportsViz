@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sports Viz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <style>
+            
+            body{
+              margin-top: 60px;
+                background-color:#ffffff;
+                width: 80%;
+                margin-left:auto;
+                margin-right:auto;
+                
+            }
+            
+            footer{
+                padding-top:5px;
+                padding-left:11px;
+                padding-right:11px;
+                padding-bottom:11px;
+                color: #000000;
+            }
+            
+           #menubar-contents{
+            margin-left: 10px;
+           }
+            
+            #mainFrame{
+              /*background-color: #ffffff;*/
+              padding-bottom: 0px;
+              
+              
+            }
+            
+            #mainFrame playerHeader{
+              /*background-color: #ffffff;*/
+              padding-top: 0px;
+              
+            }
+            
+            #break{
+                border-bottom: solid 1px;
+            }
+            
+            #buffer{
+                /*background-image: -webkit-linear-gradient(top,#dddddd,#000000);
+                background-image: -moz-linear-gradient(top,#dddddd,#000000);*/
+                height:6px;
+            }
+           
+            @media (max-width: 480px) {
+               body{
+                width: 100%;
+               }
+               
+               #about p{
+                width: 100%;
+                }
+            
+                #break{
+                    border-bottom: solid 1px;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                #workbox{
+                    width: auto;
+                    margin-right: 24px;
+                }
+            }
+            
+            
+            /* Autocomplete CSS*/
+            
+            .twitter-typeahead .tt-query,
+.twitter-typeahead .tt-hint {
+  margin-bottom: 0;
+}
+
+.tt-dropdown-menu {
+  min-width: 160px;
+  margin-top: 2px;
+  padding: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+.tt-suggestion {
+  display: block;
+  padding: 3px 20px;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+  color: #fff;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0)
+}
+
+.tt-suggestion.tt-is-under-cursor a {
+  color: #fff;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+.twitter-typeahead .tt-hint {
+    color: #b8b8b8;
+    display: block;
+    height: 12px;
+    padding: 8px 14px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border: 1px solid transparent;
+}
+          
+            
+            
+        </style>
+        
+  
+  
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="./chart2.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
+    <script type="text/javascript" src="./typeahead.js"></script>
+      <link rel="import" href="/header.html">
+  </head>
+  
+  <div class="navbar navbar-fixed-top navbar-inverse" id="menubar">
+        <div class="navbar-inner">
+            
+            <ul class="nav" id="menubar-contents">
+              <a class="brand" href="./index.html">SportsViz</a>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Michigan Tech Hockey<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./stats.html">Team at a glance</a></li>
+                        <li><a href="./player.html">Players</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+  
+<body data-spy="scroll" data-target="#menubar">
+    
+    <!--<ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#points" data-toggle="tab">Points</a></li>
+              <li><a href="#player" data-toggle="tab">Player</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade in active" id="points">
+                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+              </div>
+              <div class="tab-pane fade" id="player">
+                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+              </div>
+
+            </div>-->
+  <div class="container-fluid" id="mainFrame">
+    <div class="span5" id="playerHeader">
+      <h1 id="playerName">Player Name <small>MTU</small></h1>
+    </div>
+    <div class="span2 offset1">
+     <input type="text" class="search-query" placeholder="Search for Players" id="playerSearch">
+    </div>
+    <script type="text/javascript">
+        $('#playerSearch').typeahead([
+        {
+            name: 'Players',
+            local: ["Cliff Watson","Brad Stebner","Justin Fillion","Chris Leibinger","Reid Sturos","Jacob Johnstone","Dennis Rix","Tanner Kero",
+                        "Daniel Holmberg","Ryan Furne","Patrick Anderson","Malcolm Gould","David Johnstone","Riley Sweeney","Cj Eick","Blake Pietila",
+                        "Blake Hietala","Max Vallis","Shane Hanna","Alex Petan","Daniel Sova","Mike Neville","Jimmy Davis","Tyler Heinonen",
+                        "Brent Baltus","Walker Hyland","Jamie Phillips","Pheonix Copley","Matt Wintjes"]
+        }
+        ]);
+    </script>
+    <div class="span2 offset1">
+      <button class="btn btn-primary" onclick="drawVisualization2()" id="playerSubmit">Submit</button>
+    </div>
+    <script type="text/javascript">
+    $("#playerSearch").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#playerSubmit").click();
+    }
+    });
+    </script>
+  </div> 
+  <div class="container-fluid" id="visualization_div" style="align: center; width: 100%; height: 600px;"></div>
+  
+ 
+ 
+
+ 
+ 
+    
+  </body>
+ <div id="buffer"></div>
+  <footer>
+    <center>
+    Baja Enterprises<br>
+    <small><font color="#8f8f8f">engineering | design | development</font></small><br>
+    </center>
+  </footer>
+  
+</html>
