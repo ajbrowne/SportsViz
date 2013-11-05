@@ -12,7 +12,7 @@ for name in soup.find_all('span',{'class':'name'}):
 	if(count == 1):
 		name = name.string
 
-f = open('game.csv', 'w')
+f = open('anderson_games.csv', 'w')
 i = 0
 j = 0
 data = []
