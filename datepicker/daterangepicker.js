@@ -370,8 +370,8 @@
             };
             if (this.opens == 'left') {
                 this.container.css({
-                    top: this.element.offset().top + this.element.outerHeight() - parentOffset.top,
-                    right: $(window).width() - this.element.offset().left - this.element.outerWidth() - parentOffset.left,
+                    top: this.element.offset().top + this.element.outerHeight() /*- parentOffset.top*/,
+                    right: $(window).width() - this.element.offset().left - this.element.outerWidth() /*- parentOffset.left*/,
                     left: 'auto'
                 });
                 if (this.container.offset().left < 0) {

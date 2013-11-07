@@ -9,7 +9,13 @@ var strings = new Array();
 var name;
 var query="";
 var title;
+var startDate="";
+var endDate="";
 
+function setStartEnd(start,end){
+     startDate = start;
+     endDate = end;
+}
 
 var values = new Array("'Games Played'","Goals","Assists","Points","PIMS","PPG","SHG","ENG","GWG","GTG","Shots");
 //strings[0]=1;
@@ -51,7 +57,7 @@ function updateViz(){
     
     var fields = getQuery();
     //var fullQuery = "SELECT Name, Goals, Assists, Points FROM 1gPQDMXOhPIteyigdbatmSdQJNyLH1ofQImUhkU0 WHERE Name IN ("+query+")";
-    var fullQuery = "SELECT DATE"+fields+" FROM 1_IN550zppAYGzEFN9KkVKu3SNQxy3NyZ8N0UdRs WHERE NAME = "+query;
+    var fullQuery = "SELECT DATE"+fields+" FROM 1_IN550zppAYGzEFN9KkVKu3SNQxy3NyZ8N0UdRs WHERE NAME = "+query+" AND DATE <= '"+endDate+" 00:00:00' AND DATE >= '"+startDate+" 00:00:00'";
     var sendQuery = new google.visualization.Query(dataSourceUrl+fullQuery);
     //visualization = new google.visualization.BarChart(document.getElementById('visualization_div'));
     updateTitle();
@@ -76,7 +82,7 @@ function updateViz(){
     
     function drawViz(){
       var dataSourceUrl='https://www.google.com/fusiontables/gvizdata?tq=';
-      var query = "SELECT DATE, Assists FROM 1_IN550zppAYGzEFN9KkVKu3SNQxy3NyZ8N0UdRs WHERE NAME = 'Blake Hietala'";
+      var query = "SELECT DATE, Assists FROM 1_IN550zppAYGzEFN9KkVKu3SNQxy3NyZ8N0UdRs WHERE NAME = 'Blake Hietala' AND DATE >= '08/01/2013 00:00:00'";
       
       //https://www.google.com/fusiontables/embedviz?viz=GVIZ&t=TABLE&q=select+col0%2C+col1%2C+col2%2C+col3%2C+col4%2C+col5%2C+col6%2C+col7%2C+col8%2C+col9%2C+col10%2C+col11%2C+col12+from+1_IN550zppAYGzEFN9KkVKu3SNQxy3NyZ8N0UdRs&containerId=gviz_canvas
       
