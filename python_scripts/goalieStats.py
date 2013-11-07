@@ -10,7 +10,7 @@ stats = soup.findAll('td',{'align':'center'})
 count = 0
 i = 0
 check = 0
-f = open('goalie_totals.csv', 'w')
+f = open('goalie_totals', 'w')
 f.write("Jamie Phillips" + ',')
 yup = 1
 i = i + 1

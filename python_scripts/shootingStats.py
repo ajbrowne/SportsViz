@@ -18,7 +18,7 @@ check = 0
 wait = 0
 string = ''
 namearray = [0] * 100
-f = open('scoring_totals.csv', 'w')
+f = open('scoring_totals', 'w')
 for eachname in names:
 	namearray[i] = eachname
 	i = i + 1	

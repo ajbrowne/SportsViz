@@ -8,7 +8,7 @@ password = 'vizvizviz'
 
 # Set the filename and collection
 filename = 'anderson_games.csv.xls'
-filenames = ['player_games.csv.xls','goalie_totals.csv.xls','scoring_totals.csv.xls']
+filenames = ['player_games.xls','goalie_totals.xls','scoring_totals.xls']
 collection = None
 
 for name in filenames:
@@ -35,13 +35,13 @@ for name in filenames:
 
     #deletes the old file so the new updated one can be entered
     for doc in docsclient.GetAllResources():
-        if doc.title.text == 'player_games.csv.xls' and name == 'player_games.csv.xls':
+        if doc.title.text == 'player_games.xls' and name == 'player_games.xls':
             docsclient.DeleteResource(doc, force=True)
             break
-        if doc.title.text == 'goalie_totals.csv.xls' and name == 'goalie_totals.csv.xls':
+        if doc.title.text == 'goalie_totals.xls' and name == 'goalie_totals.xls':
             docsclient.DeleteResource(doc, force=True)
             break
-        if doc.title.text == 'scoring_totals.csv.xls' and name == 'scoring_totals.csv.xls':
+        if doc.title.text == 'scoring_totals.xls' and name == 'scoring_totals.xls':
             docsclient.DeleteResource(doc, force=True)
             break
 

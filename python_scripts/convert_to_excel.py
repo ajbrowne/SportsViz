@@ -1,6 +1,6 @@
 import csv, xlwt
 
-files = ['scoring_totals.csv','goalie_totals.csv','player_games.csv']
+files = ['scoring_totals','goalie_totals','player_games']
 
 for i in files:
     f=open(i, 'rb')
