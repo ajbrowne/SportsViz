@@ -27,6 +27,7 @@ urlArray = ['http://www.michigantechhuskies.com/sports/mice/2013-14/bios/anderso
 	    'http://www.michigantechhuskies.com/sports/mice/2013-14/bios/sweeney_riley_c6fd',
 	    'http://www.michigantechhuskies.com/sports/mice/2013-14/bios/vallis_max_dqbr',
 	    'http://www.michigantechhuskies.com/sports/mice/2013-14/bios/watson_cliff_obyg']
+f = open('player_games.csv', 'w')
 for x in urlArray:
 	url = x+'?view=gamelog'
 	soup = BeautifulSoup(urllib.urlopen(url).read())
@@ -39,7 +40,7 @@ for x in urlArray:
 		if(count == 1):
 			name = name.string
 	
-	f = open('player_games2.csv', 'a')
+	f = open('player_games.csv', 'a')
 	i = 0
 	j = 0
 	data = []
