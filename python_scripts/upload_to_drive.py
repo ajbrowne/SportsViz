@@ -35,14 +35,20 @@ for name in filenames:
 
     #deletes the old file so the new updated one can be entered
     for doc in docsclient.GetAllResources():
-        if doc.title.text == 'anderson_games.csv.xls':
+        if doc.title.text == 'player_games.csv.xls' and name == 'player_games.csv.xls':
+            docsclient.DeleteResource(doc, force=True)
+            break
+        if doc.title.text == 'goalie_totals.csv.xls' and name == 'goalie_totals.csv.xls':
+            docsclient.DeleteResource(doc, force=True)
+            break
+        if doc.title.text == 'scoring_totals.csv.xls' and name == 'scoring_totals.csv.xls':
             docsclient.DeleteResource(doc, force=True)
             break
 
     # The default root collection URI
     uri = 'https://docs.google.com/feeds/upload/create-session/default/private/full'
 
-    # Make sure Google doesn't try to do any conversion on the upload (e.g. convert images to documents)
+    # Make sure Google tries to do all of the conversions on the upload (e.g. convert images to documents)
     uri += '?convert=true'
 
     # Create an uploader and upload the file
