@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link rel="apple-touch-icon" href="/custom_icon.png">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <script type="text/javascript">
+
+if(("standalone" in window.navigator) && window.navigator.standalone){
+
+var noddy, remotes = false;
+
+document.addEventListener('click', function(event) {
+
+noddy = event.target;
+
+while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+noddy = noddy.parentNode;
+}
+
+if('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
+{
+event.preventDefault();
+document.location.href = noddy.href;
+}
+
+},false);
+}
+</script>
         <style>
             
             body{
@@ -161,6 +187,8 @@
                     <ul class="dropdown-menu">
                         <li><a href="./stats.html">Team at a glance</a></li>
                         <li><a href="./player.html">Players</a></li>
+                        
+          <li><a href="./playerGame.html">Player Trends</a></li>
                     </ul>
                 </li>
             </ul>

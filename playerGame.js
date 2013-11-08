@@ -91,6 +91,9 @@ function updateViz(){
       var dataSourceUrl='https://www.google.com/fusiontables/gvizdata?tq=';
       var query = "SELECT DATE, Assists FROM 1_IN550zppAYGzEFN9KkVKu3SNQxy3NyZ8N0UdRs WHERE DATE >= '08/01/2013 00:00:00'";
       
+      //var dataSourceUrl='https://spreadsheets.google.com/a/mtu.edu/tq?key=0AtNHXyRLcru2dFBERm1xY0JPMGRzMF9YWTFOS0JFbnc&tq=';
+      //var query = "select B, F WHERE A = 'Blake Hietala'";
+      
       //https://www.google.com/fusiontables/embedviz?viz=GVIZ&t=TABLE&q=select+col0%2C+col1%2C+col2%2C+col3%2C+col4%2C+col5%2C+col6%2C+col7%2C+col8%2C+col9%2C+col10%2C+col11%2C+col12+from+1_IN550zppAYGzEFN9KkVKu3SNQxy3NyZ8N0UdRs&containerId=gviz_canvas
       
       var query = new google.visualization.Query(dataSourceUrl+query);
