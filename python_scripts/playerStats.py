@@ -27,6 +27,7 @@ urlArray = ['http://www.michigantechhuskies.com/sports/mice/2013-14/bios/anderso
 	    'http://www.michigantechhuskies.com/sports/mice/2013-14/bios/sweeney_riley_c6fd',
 	    'http://www.michigantechhuskies.com/sports/mice/2013-14/bios/vallis_max_dqbr',
 	    'http://www.michigantechhuskies.com/sports/mice/2013-14/bios/watson_cliff_obyg']
+monthArray = ['Oct', 'Nov']
 f = open('player_games', 'w')
 for x in urlArray:
 	url = x+'?view=gamelog'
@@ -51,7 +52,9 @@ for x in urlArray:
 	    line = []
 	    for td in row:
 		line.append(td.text.strip()) # put entries into new row
-		string = line[i].replace(' ', '')
+		string = line[i]
+		if string.find('Oct') == -1 and string.find('Nov') == -1:
+			string = string.replace(' ', '')
 		string = string.replace('\n', '')
 		string = string.replace('\r', '')
 		string = string.replace("at", '')
