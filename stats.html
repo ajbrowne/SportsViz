@@ -4,7 +4,7 @@
     <title>Sports Viz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
       <link rel="apple-touch-icon" href="/custom_icon.png">
       <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -171,29 +171,38 @@ document.location.href = noddy.href;
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript" src="./chart2.js"></script>
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
     <script type="text/javascript" src="./typeahead.js"></script>
       <link rel="import" href="/header.html">
   </head>
   
-  <div class="navbar navbar-fixed-top navbar-inverse" id="menubar">
-        <div class="navbar-inner">
-            
-            <ul class="nav" id="menubar-contents">
-              <a class="brand" href="./index.html">SportsViz</a>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Michigan Tech Hockey<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="./stats.html">Team at a glance</a></li>
-                        <li><a href="./player.html">Players</a></li>
-                        
+      <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="./index.html">SportsViz</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Michigan Tech Hockey <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="./stats.html">Team at a glance</a></li>
+          <li><a href="./player.html">Players</a></li>
           <li><a href="./playerGame.html">Player Trends</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
   
 <body data-spy="scroll" data-target="#menubar">
     
@@ -210,11 +219,11 @@ document.location.href = noddy.href;
               </div>
 
             </div>-->
-  <div class="container-fluid" id="mainFrame">
-    <div class="span5" id="playerHeader">
+  <div class="container" id="mainFrame">
+    <div class="col-md-6" id="playerHeader">
       <h1 id="playerName">Player Name <small>MTU</small></h1>
     </div>
-    <div class="span2 offset1">
+    <div class="col-md-3">
      <input type="text" class="search-query" placeholder="Search for Players" id="playerSearch">
     </div>
     <script type="text/javascript">
@@ -228,7 +237,7 @@ document.location.href = noddy.href;
         }
         ]);
     </script>
-    <div class="span2 offset1">
+    <div class="col-md-3">
       <button class="btn btn-primary" onclick="drawVisualization2()" id="playerSubmit">Submit</button>
     </div>
     <script type="text/javascript">
@@ -239,7 +248,13 @@ document.location.href = noddy.href;
     });
     </script>
   </div> 
-  <div class="container-fluid" id="visualization_div" style="align: center; width: 100%; height: 600px;"></div>
+  <div class="container" id="visualization_div" style="align: center; width: 100%; height: 600px;"></div>
+  <div class="container">
+    <div class="col-md-4" id="penalty_div" onload="drawVisualizationPie()" style="height:300px;"></div>
+    
+  </div>
+  
+  
   
  
  

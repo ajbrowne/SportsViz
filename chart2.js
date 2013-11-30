@@ -69,7 +69,35 @@ google.load('visualization', '1', {packages: ['corechart']});
         }
       });
     }
+    drawVisualizationPie();
     }
+
+function drawVisualizationPie(){
+      var dataSourceUrl = 'https://docs.google.com/spreadsheet/tq?key=0Av1GLm4EhP6TdEJWbWVpWjFrMXI4N0pHUGVCclJEMVE&tq=';
+      
+      var query = "select A,sum(I) group by A";
+  
+      var query = new google.visualization.Query(dataSourceUrl+query);
+      visualization = new google.visualization.PieChart(document.getElementById('penalty_div'));
+      query.send(handleQueryResponsePie);
+    }
+    
+    function handleQueryResponsePie(response) {
+      if (response.isError()) {
+        alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+      }
+
+      var data = response.getDataTable();
+      visualization.draw(data, {
+        legend: 'bottom',
+        animation:{
+          duration: 1000,
+          easing: 'out',
+        },
+      });
+    }
+
 
     google.setOnLoadCallback(drawVisualization);
     

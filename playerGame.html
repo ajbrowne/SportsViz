@@ -254,7 +254,7 @@ document.location.href = noddy.href;
                         <optgroup label="Forwards">
                             <option>Patrick Anderson</option>
                             <option>Brent Baltus</option>
-                            <option>Cj Eick</option>
+                            <option>CJ Eick</option>
                             <option>Ryan Furne</option>
                             <option>Malcolm Gould</option>
                             <option>Tyler Heinonen</option>
@@ -303,7 +303,7 @@ document.location.href = noddy.href;
 
                <script type="text/javascript">
                $(document).ready(function() {
-                setStartEnd(moment("08-01-2013", "MM-DD-YYYY").format('MM/DD/YYYY'),moment().format('MM/DD/YYYY'));
+                setStartEnd(moment("08-01-2013", "MM-DD-YYYY").format('YYYY-MM-DD'),moment().format('YYYY-MM-DD'));
                 //document.getElementById("playerName").innerHTML = startDate;
                   $('#reportrange').daterangepicker(
                      {
@@ -345,7 +345,7 @@ document.location.href = noddy.href;
                      function(start, end) {
                       console.log("Callback has been called!");
                       $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-                      setStartEnd(start.format('MM/DD/YYYY'),end.format('MM/DD/YYYY'));
+                      setStartEnd(start.format('YYYY-MM-DD'),end.format('YYYY-MM-DD'));
                       //startDate = start.format('MMM D, YYYY');
                       //document.getElementById("playerName").innerHTML = startDate;
                       //endDate = end.format('MMM D, YYYY');
@@ -429,7 +429,12 @@ document.location.href = noddy.href;
     <!--</div>-->
   </div>
   
- 
+ <div class="container">
+  
+    <div class="col-md-4"><center>Penalty Minutes</center><div id="penalty_div" style="height:300px;"></div></div>
+    <div class="col-md-4"><center>Plus / Minus</center><div id="pm_gauge" style="height:300px;"></div></div>
+    <div class="col-md-4"><center>Points</center><div id="penalty_div2" style="height:300px;"></div</div>
+  </div>
  
 
  
