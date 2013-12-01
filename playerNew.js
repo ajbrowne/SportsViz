@@ -10,12 +10,12 @@ var name;
 var query="";
 var title;
 
-
-var values = new Array("'Games Played'","Goals","Assists","Points","PIMS","PPG","SHG","ENG","GWG","GTG","Shots");
-strings[0]=1;
-strings[10]=1;
+var dataSourceUrl='https://docs.google.com/spreadsheet/tq?key=0Av1GLm4EhP6TdEJWbWVpWjFrMXI4N0pHUGVCclJEMVE&tq=';
+//var values = new Array("'Games Played'","Goals","Assists","Points","PIMS","PPG","SHG","ENG","GWG","GTG","Shots");
+//strings[0]=1;
+//strings[10]=1;
 var visualization;
-
+var values = new Array("'Games Played'","F","G","H","I","K","L","M","N","O","P");
   //window.onload = init();
 function init(){
       /*points.onclick = function() {
@@ -26,19 +26,20 @@ function init(){
         }
         //updateViz();
       }*/
-    
+    strings[1]=1;
+      strings[2]=1;
    
 }
     
 function updateViz(){
-      var dataSourceUrl='https://www.google.com/fusiontables/gvizdata?tq=';
+      
       
       query="",i;
       var count = 0;
       for (i=0;i<playerSearch.options.length;i++) {
        if (playerSearch.options[i].selected) {
           if(count!=0){
-            query = query+",";
+            query = query+"OR A=";
           }
             query = query + "'"+ playerSearch.options[i].text + "'";
             count = count +1;
@@ -47,7 +48,12 @@ function updateViz(){
     
     var fields = getQuery();
     //var fullQuery = "SELECT Name, Goals, Assists, Points FROM 1gPQDMXOhPIteyigdbatmSdQJNyLH1ofQImUhkU0 WHERE Name IN ("+query+")";
-    var fullQuery = "SELECT Name"+fields+" FROM 1gPQDMXOhPIteyigdbatmSdQJNyLH1ofQImUhkU0 WHERE Name IN ("+query+")";
+    if(count!=0){
+          var fullQuery = "SELECT A"+fields+" WHERE A="+query+" Group by A";
+          //document.getElementById("playerName").innerHTML=fullQuery;
+    } else {
+     var fullQuery = "SELECT A"+fields+" Group by A";
+    }
     var sendQuery = new google.visualization.Query(dataSourceUrl+fullQuery);
     //visualization = new google.visualization.BarChart(document.getElementById('visualization_div'));
     updateTitle();
@@ -67,12 +73,16 @@ function updateViz(){
           }
        }
     }
-    document.getElementById("playerName").innerHTML=title+"<small> MTU</small>";
+     if(count!=0){
+          document.getElementById("playerName").innerHTML=title+"<small> MTU</small>";
+     } else {
+          document.getElementById("playerName").innerHTML="Michigan Tech Hockey";
+     }
     }
     
     function drawViz(){
-      var dataSourceUrl='https://www.google.com/fusiontables/gvizdata?tq=';
-      var query = "SELECT Name, Goals, Assists FROM 1gPQDMXOhPIteyigdbatmSdQJNyLH1ofQImUhkU0";
+     
+      var query = "select A, SUM(F), SUM(G)GROUP BY A";
       
       var query = new google.visualization.Query(dataSourceUrl+query);
       visualization = new google.visualization.BarChart(document.getElementById('visualization_div'));
@@ -114,7 +124,7 @@ function updateViz(){
       var str = "";
       for (i=0;i<11;i++){
         if(strings[i]==1){
-          str=str+ ", "+values[i];
+          str=str+ ", sum("+values[i]+")";
         }
       }
       return str;

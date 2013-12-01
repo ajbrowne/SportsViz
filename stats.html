@@ -221,9 +221,9 @@ document.location.href = noddy.href;
             </div>-->
   <div class="container" id="mainFrame">
     <div class="col-md-6" id="playerHeader">
-      <h1 id="playerName">Player Name <small>MTU</small></h1>
+      <h1 id="playerName">Michigan Tech Hockey</h1>
     </div>
-    <div class="col-md-3">
+    <!--<div class="col-md-3">
      <input type="text" class="search-query" placeholder="Search for Players" id="playerSearch">
     </div>
     <script type="text/javascript">
@@ -246,22 +246,21 @@ document.location.href = noddy.href;
         $("#playerSubmit").click();
     }
     });
-    </script>
+    </script>-->
   </div> 
   <div class="container" id="visualization_div" style="align: center; width: 100%; height: 600px;"></div>
   <div class="container">
-    <div class="col-md-4" id="penalty_div" onload="drawVisualizationPie()" style="height:300px;"></div>
-    
-  </div>
-  
-  
-  
- 
- 
-
- 
- 
-    
+    <div class="row">
+      <div class="col-md-4"><center>Penalty Minutes</center><div id="penalty_div" style="height:300px;"></div></div>
+      <div class="col-md-4"><center>Plus / Minus</center><div id="pm_gauge" style="height:300px;"></div></div>
+      <div class="col-md-4"><center>Points</center><div id="penalty_div2" style="height:300px;"></div></div>
+    </div>
+  <div class="row">
+      <div class="col-md-4"><center>Top 5 Scorers<div id="div_table" style="width: 95%;"></div></center></div>
+      <div class="col-md-4"><center>Top 5 Goals per Shot<div id="div_table2" style="width: 95%;"></div></center></div>
+      <div class="col-md-4"><center>Goals per Game Outcome<div id="div_table3" style="width: 95%;"></div></center></div>
+    </div>
+ </div>
   </body>
  <div id="buffer"></div>
   <footer>

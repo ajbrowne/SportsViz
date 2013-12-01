@@ -8,7 +8,7 @@ password = 'vizvizviz'
 
 # Set the filename and collection
 filename = 'anderson_games.csv.xls'
-filenames = ['player_games.xls','goalie_totals.xls','scoring_totals.xls']
+filenames = ['player_games','goalie_totals','scoring_totals']
 collection = None
 
 for name in filenames:

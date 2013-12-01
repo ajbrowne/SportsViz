@@ -1,5 +1,5 @@
 from apscheduler.scheduler import Scheduler
-import os, logging
+import os, logging, time
 import upload_to_drive, playerStats, convert_to_excel, goalieStats, shootingStats
 
 
@@ -9,9 +9,11 @@ sched = Scheduler()
 @sched.interval_schedule(minutes = 2)
 def timed_job():
    execfile("./goalieStats.py")
+   time.sleep(40)
    execfile("./shootingStats.py")
+   time.sleep(20)
    execfile("./playerStats.py")
-   execfile("./convert_to_excel.py")
+   time.sleep(20)
    execfile("./upload_to_drive.py")
 
 #@sched.cron_schedule(day_of_week='mon-fri', hour=17)
