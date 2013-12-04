@@ -1,0 +1,443 @@
+Name,Date,Opponent,Record,,Goals,Assists,Points,PIMS,+/-,PPG,SHG,ENG,GWG,GTG,Shots
+Patrick Anderson,Oct 5,Laurentian,W,3-2,0,0,0,0,-1,0,0,0,0,0,3
+Patrick Anderson,Oct 11,Minn.Duluth,L,2-1, , , , , , , , , , , 
+Patrick Anderson,Oct 12,Minn.Duluth,T,1-1, , , , , , , , , , , 
+Patrick Anderson,Oct 18,NotreDame,L,3-2, , , , , , , , , , , 
+Patrick Anderson,Oct 20,NotreDame,L,7-3, , , , , , , , , , , 
+Patrick Anderson,Oct 25,NorthernMich.,L,2-0, , , , , , , , , , , 
+Patrick Anderson,Oct 26,NorthernMich.,W,4-1, , , , , , , , , , , 
+Patrick Anderson,Nov 1,Michigan,L,3-2, , , , , , , , , , , 
+Patrick Anderson,Nov 2,Michigan,L,2-1, , , , , , , , , , , 
+Patrick Anderson,Nov 8,MichiganSt.,W,3-0, , , , , , , , , , , 
+Patrick Anderson,Nov 9,MichiganSt.,W,3-2, , , , , , , , , , , 
+Patrick Anderson,Nov 15,LakeSuperiorSt.,L,5-3, , , , , , , , , , , 
+Patrick Anderson,Nov 16,LakeSuperiorSt.,W,2-1, , , , , , , , , , , 
+Patrick Anderson,Nov 22,Alas.Anchorage,L,3-1, , , , , , , , , , , 
+Patrick Anderson,Nov 23,Alas.Anchorage,T,2-2, , , , , , , , , , , 
+Patrick Anderson,Nov 29,Alas.Fairbanks,W,3-2, , , , , , , , , , , 
+Patrick Anderson,Nov 30,Alas.Fairbanks,W,2-1, , , , , , , , , , , 
+Brent Baltus,Oct 5,Laurentian,W,3-2,0,0,0,2,1,0,0,0,0,0,2
+Brent Baltus,Oct 11,Minn.Duluth,L,2-1,0,0,0,0,0,0,0,0,0,0,0
+Brent Baltus,Oct 12,Minn.Duluth,T,1-1,0,0,0,2,0,0,0,0,0,0,2
+Brent Baltus,Oct 18,NotreDame,L,3-2,0,1,1,0,0,0,0,0,0,0,1
+Brent Baltus,Oct 20,NotreDame,L,7-3,0,0,0,0,0,0,0,0,0,0,0
+Brent Baltus,Oct 25,NorthernMich.,L,2-0,0,0,0,2,0,0,0,0,0,0,0
+Brent Baltus,Oct 26,NorthernMich.,W,4-1, , , , , , , , , , , 
+Brent Baltus,Nov 1,Michigan,L,3-2, , , , , , , , , , , 
+Brent Baltus,Nov 2,Michigan,L,2-1, , , , , , , , , , , 
+Brent Baltus,Nov 8,MichiganSt.,W,3-0, , , , , , , , , , , 
+Brent Baltus,Nov 9,MichiganSt.,W,3-2,1,0,1,0,1,0,0,0,0,0,3
+Brent Baltus,Nov 15,LakeSuperiorSt.,L,5-3,0,0,0,0,-1,0,0,0,0,0,0
+Brent Baltus,Nov 16,LakeSuperiorSt.,W,2-1, , , , , , , , , , , 
+Brent Baltus,Nov 22,Alas.Anchorage,L,3-1, , , , , , , , , , , 
+Brent Baltus,Nov 23,Alas.Anchorage,T,2-2,0,0,0,2,0,0,0,0,0,0,0
+Brent Baltus,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,0,0,0,0,0,0,1
+Brent Baltus,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,0,0,0,0,0,0,0,0
+Jimmy Davis,Oct 5,Laurentian,W,3-2,0,0,0,0,1,0,0,0,0,0,0
+Jimmy Davis,Oct 11,Minn.Duluth,L,2-1, , , , , , , , , , , 
+Jimmy Davis,Oct 12,Minn.Duluth,T,1-1, , , , , , , , , , , 
+Jimmy Davis,Oct 18,NotreDame,L,3-2, , , , , , , , , , , 
+Jimmy Davis,Oct 20,NotreDame,L,7-3, , , , , , , , , , , 
+Jimmy Davis,Oct 25,NorthernMich.,L,2-0, , , , , , , , , , , 
+Jimmy Davis,Oct 26,NorthernMich.,W,4-1, , , , , , , , , , , 
+Jimmy Davis,Nov 1,Michigan,L,3-2, , , , , , , , , , , 
+Jimmy Davis,Nov 2,Michigan,L,2-1, , , , , , , , , , , 
+Jimmy Davis,Nov 8,MichiganSt.,W,3-0, , , , , , , , , , , 
+Jimmy Davis,Nov 9,MichiganSt.,W,3-2, , , , , , , , , , , 
+Jimmy Davis,Nov 15,LakeSuperiorSt.,L,5-3, , , , , , , , , , , 
+Jimmy Davis,Nov 16,LakeSuperiorSt.,W,2-1, , , , , , , , , , , 
+Jimmy Davis,Nov 22,Alas.Anchorage,L,3-1, , , , , , , , , , , 
+Jimmy Davis,Nov 23,Alas.Anchorage,T,2-2, , , , , , , , , , , 
+Jimmy Davis,Nov 29,Alas.Fairbanks,W,3-2, , , , , , , , , , , 
+Jimmy Davis,Nov 30,Alas.Fairbanks,W,2-1, , , , , , , , , , , 
+CJ Eick,Oct 5,Laurentian,W,3-2,0,0,0,0,0,0,0,0,0,0,2
+CJ Eick,Oct 11,Minn.Duluth,L,2-1,0,0,0,0,1,0,0,0,0,0,1
+CJ Eick,Oct 12,Minn.Duluth,T,1-1,0,0,0,0,0,0,0,0,0,0,1
+CJ Eick,Oct 18,NotreDame,L,3-2,1,0,1,0,0,0,1,0,0,0,3
+CJ Eick,Oct 20,NotreDame,L,7-3,0,0,0,10,0,0,0,0,0,0,1
+CJ Eick,Oct 25,NorthernMich.,L,2-0,0,0,0,0,0,0,0,0,0,0,0
+CJ Eick,Oct 26,NorthernMich.,W,4-1,0,0,0,2,0,0,0,0,0,0,1
+CJ Eick,Nov 1,Michigan,L,3-2,1,0,1,0,-1,0,1,0,0,0,2
+CJ Eick,Nov 2,Michigan,L,2-1,0,1,1,0,1,0,0,0,0,0,0
+CJ Eick,Nov 8,MichiganSt.,W,3-0,0,0,0,0,0,0,0,0,0,0,0
+CJ Eick,Nov 9,MichiganSt.,W,3-2,0,0,0,0,0,0,0,0,0,0,4
+CJ Eick,Nov 15,LakeSuperiorSt.,L,5-3,0,0,0,0,-1,0,0,0,0,0,2
+CJ Eick,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,0,0,0,0,0,0,0,4
+CJ Eick,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,0,0,0,0,0,0,0
+CJ Eick,Nov 23,Alas.Anchorage,T,2-2,0,0,0,0,0,0,0,0,0,0,0
+CJ Eick,Nov 29,Alas.Fairbanks,W,3-2,0,2,2,0,2,0,0,0,0,0,2
+CJ Eick,Nov 30,Alas.Fairbanks,W,2-1,0,1,1,0,1,0,0,0,0,0,3
+Justin Fillion,Oct 5,Laurentian,W,3-2, , , , , , , , , , , 
+Justin Fillion,Oct 11,Minn.Duluth,L,2-1, , , , , , , , , , , 
+Justin Fillion,Oct 12,Minn.Duluth,T,1-1, , , , , , , , , , , 
+Justin Fillion,Oct 18,NotreDame,L,3-2, , , , , , , , , , , 
+Justin Fillion,Oct 20,NotreDame,L,7-3, , , , , , , , , , , 
+Justin Fillion,Oct 25,NorthernMich.,L,2-0, , , , , , , , , , , 
+Justin Fillion,Oct 26,NorthernMich.,W,4-1, , , , , , , , , , , 
+Justin Fillion,Nov 1,Michigan,L,3-2, , , , , , , , , , , 
+Justin Fillion,Nov 2,Michigan,L,2-1, , , , , , , , , , , 
+Justin Fillion,Nov 8,MichiganSt.,W,3-0, , , , , , , , , , , 
+Justin Fillion,Nov 9,MichiganSt.,W,3-2, , , , , , , , , , , 
+Justin Fillion,Nov 15,LakeSuperiorSt.,L,5-3,0,0,0,0,0,0,0,0,0,0,0
+Justin Fillion,Nov 16,LakeSuperiorSt.,W,2-1, , , , , , , , , , , 
+Justin Fillion,Nov 22,Alas.Anchorage,L,3-1, , , , , , , , , , , 
+Justin Fillion,Nov 23,Alas.Anchorage,T,2-2, , , , , , , , , , , 
+Justin Fillion,Nov 29,Alas.Fairbanks,W,3-2, , , , , , , , , , , 
+Justin Fillion,Nov 30,Alas.Fairbanks,W,2-1, , , , , , , , , , , 
+Ryan Furne,Oct 5,Laurentian,W,3-2,0,0,0,0,0,0,0,0,0,0,2
+Ryan Furne,Oct 11,Minn.Duluth,L,2-1,0,0,0,0,0,0,0,0,0,0,2
+Ryan Furne,Oct 12,Minn.Duluth,T,1-1,0,0,0,0,0,0,0,0,0,0,3
+Ryan Furne,Oct 18,NotreDame,L,3-2,1,0,1,2,0,1,0,0,0,0,3
+Ryan Furne,Oct 20,NotreDame,L,7-3,0,0,0,12,-1,0,0,0,0,0,0
+Ryan Furne,Oct 25,NorthernMich.,L,2-0,0,0,0,0,0,0,0,0,0,0,2
+Ryan Furne,Oct 26,NorthernMich.,W,4-1, , , , , , , , , , , 
+Ryan Furne,Nov 1,Michigan,L,3-2, , , , , , , , , , , 
+Ryan Furne,Nov 2,Michigan,L,2-1,0,0,0,0,-1,0,0,0,0,0,1
+Ryan Furne,Nov 8,MichiganSt.,W,3-0,0,1,1,0,1,0,0,0,0,0,1
+Ryan Furne,Nov 9,MichiganSt.,W,3-2,0,0,0,0,0,0,0,0,0,0,3
+Ryan Furne,Nov 15,LakeSuperiorSt.,L,5-3,0,0,0,0,0,0,0,0,0,0,1
+Ryan Furne,Nov 16,LakeSuperiorSt.,W,2-1,1,0,1,0,1,0,0,0,1,0,3
+Ryan Furne,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,0,0,0,0,0,0,2
+Ryan Furne,Nov 23,Alas.Anchorage,T,2-2,1,0,1,2,1,0,0,0,0,0,2
+Ryan Furne,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,0,0,0,0,0,0,1
+Ryan Furne,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,0,0,0,0,0,0,0,0
+Malcolm Gould,Oct 5,Laurentian,W,3-2,0,0,0,0,0,0,0,0,0,0,1
+Malcolm Gould,Oct 11,Minn.Duluth,L,2-1,0,0,0,0,-1,0,0,0,0,0,2
+Malcolm Gould,Oct 12,Minn.Duluth,T,1-1,0,0,0,0,0,0,0,0,0,0,0
+Malcolm Gould,Oct 18,NotreDame,L,3-2, , , , , , , , , , , 
+Malcolm Gould,Oct 20,NotreDame,L,7-3, , , , , , , , , , , 
+Malcolm Gould,Oct 25,NorthernMich.,L,2-0, , , , , , , , , , , 
+Malcolm Gould,Oct 26,NorthernMich.,W,4-1, , , , , , , , , , , 
+Malcolm Gould,Nov 1,Michigan,L,3-2, , , , , , , , , , , 
+Malcolm Gould,Nov 2,Michigan,L,2-1, , , , , , , , , , , 
+Malcolm Gould,Nov 8,MichiganSt.,W,3-0, , , , , , , , , , , 
+Malcolm Gould,Nov 9,MichiganSt.,W,3-2,0,0,0,0,-1,0,0,0,0,0,6
+Malcolm Gould,Nov 15,LakeSuperiorSt.,L,5-3,1,0,1,0,0,0,0,0,0,0,5
+Malcolm Gould,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,0,1,0,0,0,0,0,3
+Malcolm Gould,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,0,0,0,0,0,0,0
+Malcolm Gould,Nov 23,Alas.Anchorage,T,2-2,0,1,1,0,1,0,0,0,0,0,1
+Malcolm Gould,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,0,0,0,0,0,0,1
+Malcolm Gould,Nov 30,Alas.Fairbanks,W,2-1, , , , , , , , , , , 
+Shane Hanna,Oct 5,Laurentian,W,3-2,0,0,0,0,2,0,0,0,0,0,3
+Shane Hanna,Oct 11,Minn.Duluth,L,2-1,0,0,0,0,0,0,0,0,0,0,0
+Shane Hanna,Oct 12,Minn.Duluth,T,1-1,0,0,0,2,0,0,0,0,0,0,1
+Shane Hanna,Oct 18,NotreDame,L,3-2,0,0,0,0,0,0,0,0,0,0,0
+Shane Hanna,Oct 20,NotreDame,L,7-3,0,0,0,0,-2,0,0,0,0,0,3
+Shane Hanna,Oct 25,NorthernMich.,L,2-0,0,0,0,0,-1,0,0,0,0,0,1
+Shane Hanna,Oct 26,NorthernMich.,W,4-1,0,2,2,0,2,0,0,0,0,0,2
+Shane Hanna,Nov 1,Michigan,L,3-2,0,0,0,0,-2,0,0,0,0,0,0
+Shane Hanna,Nov 2,Michigan,L,2-1,0,0,0,0,-1,0,0,0,0,0,1
+Shane Hanna,Nov 8,MichiganSt.,W,3-0,0,0,0,2,2,0,0,0,0,0,1
+Shane Hanna,Nov 9,MichiganSt.,W,3-2,0,0,0,0,0,0,0,0,0,0,2
+Shane Hanna,Nov 15,LakeSuperiorSt.,L,5-3,0,0,0,0,1,0,0,0,0,0,2
+Shane Hanna,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,0,0,0,0,0,0,0,2
+Shane Hanna,Nov 22,Alas.Anchorage,L,3-1,0,1,1,0,-1,0,0,0,0,0,0
+Shane Hanna,Nov 23,Alas.Anchorage,T,2-2,0,0,0,0,0,0,0,0,0,0,2
+Shane Hanna,Nov 29,Alas.Fairbanks,W,3-2,1,1,2,2,2,0,0,0,0,0,3
+Shane Hanna,Nov 30,Alas.Fairbanks,W,2-1,1,0,1,0,-1,1,0,0,0,0,4
+Tyler Heinonen,Oct 5,Laurentian,W,3-2,0,0,0,0,0,0,0,0,0,0,3
+Tyler Heinonen,Oct 11,Minn.Duluth,L,2-1, , , , , , , , , , , 
+Tyler Heinonen,Oct 12,Minn.Duluth,T,1-1,0,0,0,0,0,0,0,0,0,0,1
+Tyler Heinonen,Oct 18,NotreDame,L,3-2,0,0,0,0,0,0,0,0,0,0,1
+Tyler Heinonen,Oct 20,NotreDame,L,7-3,2,0,2,0,1,0,0,0,0,0,2
+Tyler Heinonen,Oct 25,NorthernMich.,L,2-0,0,0,0,0,0,0,0,0,0,0,0
+Tyler Heinonen,Oct 26,NorthernMich.,W,4-1,0,0,0,0,0,0,0,0,0,0,2
+Tyler Heinonen,Nov 1,Michigan,L,3-2,0,0,0,0,-1,0,0,0,0,0,4
+Tyler Heinonen,Nov 2,Michigan,L,2-1,0,0,0,2,0,0,0,0,0,0,2
+Tyler Heinonen,Nov 8,MichiganSt.,W,3-0,0,0,0,2,0,0,0,0,0,0,1
+Tyler Heinonen,Nov 9,MichiganSt.,W,3-2, , , , , , , , , , , 
+Tyler Heinonen,Nov 15,LakeSuperiorSt.,L,5-3, , , , , , , , , , , 
+Tyler Heinonen,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,0,0,0,0,0,0,0,1
+Tyler Heinonen,Nov 22,Alas.Anchorage,L,3-1, , , , , , , , , , , 
+Tyler Heinonen,Nov 23,Alas.Anchorage,T,2-2, , , , , , , , , , , 
+Tyler Heinonen,Nov 29,Alas.Fairbanks,W,3-2, , , , , , , , , , , 
+Tyler Heinonen,Nov 30,Alas.Fairbanks,W,2-1, , , , , , , , , , , 
+Blake Hietala,Oct 5,Laurentian,W,3-2, , , , , , , , , , , 
+Blake Hietala,Oct 11,Minn.Duluth,L,2-1, , , , , , , , , , , 
+Blake Hietala,Oct 12,Minn.Duluth,T,1-1,0,1,1,0,1,0,0,0,0,0,2
+Blake Hietala,Oct 18,NotreDame,L,3-2,0,0,0,2,0,0,0,0,0,0,3
+Blake Hietala,Oct 20,NotreDame,L,7-3,0,2,2,2,2,0,0,0,0,0,1
+Blake Hietala,Oct 25,NorthernMich.,L,2-0,0,0,0,0,0,0,0,0,0,0,1
+Blake Hietala,Oct 26,NorthernMich.,W,4-1,2,0,2,0,1,1,0,0,1,0,3
+Blake Hietala,Nov 1,Michigan,L,3-2,0,0,0,0,0,0,0,0,0,0,7
+Blake Hietala,Nov 2,Michigan,L,2-1,0,0,0,0,-1,0,0,0,0,0,4
+Blake Hietala,Nov 8,MichiganSt.,W,3-0,0,0,0,0,0,0,0,0,0,0,1
+Blake Hietala,Nov 9,MichiganSt.,W,3-2,0,0,0,0,0,0,0,0,0,0,2
+Blake Hietala,Nov 15,LakeSuperiorSt.,L,5-3,1,0,1,2,1,0,0,0,0,0,3
+Blake Hietala,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,0,0,0,0,0,0,0,2
+Blake Hietala,Nov 22,Alas.Anchorage,L,3-1,0,0,0,4,-1,0,0,0,0,0,1
+Blake Hietala,Nov 23,Alas.Anchorage,T,2-2,0,0,0,0,0,0,0,0,0,0,1
+Blake Hietala,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,-1,0,0,0,0,0,2
+Blake Hietala,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,0,-1,0,0,0,0,0,1
+Daniel Holmberg,Oct 5,Laurentian,W,3-2, , , , , , , , , , , 
+Daniel Holmberg,Oct 11,Minn.Duluth,L,2-1, , , , , , , , , , , 
+Daniel Holmberg,Oct 12,Minn.Duluth,T,1-1, , , , , , , , , , , 
+Daniel Holmberg,Oct 18,NotreDame,L,3-2, , , , , , , , , , , 
+Daniel Holmberg,Oct 20,NotreDame,L,7-3, , , , , , , , , , , 
+Daniel Holmberg,Oct 25,NorthernMich.,L,2-0, , , , , , , , , , , 
+Daniel Holmberg,Oct 26,NorthernMich.,W,4-1,0,1,1,0,1,0,0,0,0,0,0
+Daniel Holmberg,Nov 1,Michigan,L,3-2,0,0,0,0,0,0,0,0,0,0,1
+Daniel Holmberg,Nov 2,Michigan,L,2-1, , , , , , , , , , , 
+Daniel Holmberg,Nov 8,MichiganSt.,W,3-0,0,0,0,0,0,0,0,0,0,0,3
+Daniel Holmberg,Nov 9,MichiganSt.,W,3-2,0,1,1,0,1,0,0,0,0,0,2
+Daniel Holmberg,Nov 15,LakeSuperiorSt.,L,5-3,0,0,0,0,1,0,0,0,0,0,2
+Daniel Holmberg,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,0,-1,0,0,0,0,0,1
+Daniel Holmberg,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,-1,0,0,0,0,0,1
+Daniel Holmberg,Nov 23,Alas.Anchorage,T,2-2,0,0,0,0,0,0,0,0,0,0,3
+Daniel Holmberg,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,2,0,0,0,0,0,0,1
+Daniel Holmberg,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,0,0,0,0,0,0,0,2
+Walker Hyland,Oct 5,Laurentian,W,3-2,0,0,0,0,2,0,0,0,0,0,2
+Walker Hyland,Oct 11,Minn.Duluth,L,2-1,0,0,0,2,-1,0,0,0,0,0,1
+Walker Hyland,Oct 12,Minn.Duluth,T,1-1,0,0,0,0,1,0,0,0,0,0,0
+Walker Hyland,Oct 18,NotreDame,L,3-2,0,0,0,2,-2,0,0,0,0,0,1
+Walker Hyland,Oct 20,NotreDame,L,7-3,0,0,0,2,1,0,0,0,0,0,1
+Walker Hyland,Oct 25,NorthernMich.,L,2-0,0,0,0,0,0,0,0,0,0,0,1
+Walker Hyland,Oct 26,NorthernMich.,W,4-1,0,0,0,0,2,0,0,0,0,0,4
+Walker Hyland,Nov 1,Michigan,L,3-2,0,0,0,0,0,0,0,0,0,0,2
+Walker Hyland,Nov 2,Michigan,L,2-1,0,0,0,0,0,0,0,0,0,0,0
+Walker Hyland,Nov 8,MichiganSt.,W,3-0,0,0,0,2,1,0,0,0,0,0,3
+Walker Hyland,Nov 9,MichiganSt.,W,3-2,0,0,0,0,0,0,0,0,0,0,1
+Walker Hyland,Nov 15,LakeSuperiorSt.,L,5-3,0,0,0,2,-1,0,0,0,0,0,2
+Walker Hyland,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,0,-1,0,0,0,0,0,2
+Walker Hyland,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,-1,0,0,0,0,0,0
+Walker Hyland,Nov 23,Alas.Anchorage,T,2-2,0,0,0,0,0,0,0,0,0,0,1
+Walker Hyland,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,0,0,0,0,0,0,0
+Walker Hyland,Nov 30,Alas.Fairbanks,W,2-1, , , , , , , , , , , 
+David Johnstone,Oct 5,Laurentian,W,3-2,0,0,0,0,0,0,0,0,0,0,8
+David Johnstone,Oct 11,Minn.Duluth,L,2-1,0,0,0,4,0,0,0,0,0,0,3
+David Johnstone,Oct 12,Minn.Duluth,T,1-1, , , , , , , , , , , 
+David Johnstone,Oct 18,NotreDame,L,3-2, , , , , , , , , , , 
+David Johnstone,Oct 20,NotreDame,L,7-3, , , , , , , , , , , 
+David Johnstone,Oct 25,NorthernMich.,L,2-0,0,0,0,0,0,0,0,0,0,0,2
+David Johnstone,Oct 26,NorthernMich.,W,4-1,1,1,2,0,2,0,0,0,0,0,2
+David Johnstone,Nov 1,Michigan,L,3-2,0,1,1,2,0,0,0,0,0,0,6
+David Johnstone,Nov 2,Michigan,L,2-1,0,0,0,0,0,0,0,0,0,0,1
+David Johnstone,Nov 8,MichiganSt.,W,3-0,1,0,1,0,1,0,0,0,1,0,3
+David Johnstone,Nov 9,MichiganSt.,W,3-2,0,0,0,0,-1,0,0,0,0,0,0
+David Johnstone,Nov 15,LakeSuperiorSt.,L,5-3, , , , , , , , , , , 
+David Johnstone,Nov 16,LakeSuperiorSt.,W,2-1, , , , , , , , , , , 
+David Johnstone,Nov 22,Alas.Anchorage,L,3-1, , , , , , , , , , , 
+David Johnstone,Nov 23,Alas.Anchorage,T,2-2, , , , , , , , , , , 
+David Johnstone,Nov 29,Alas.Fairbanks,W,3-2, , , , , , , , , , , 
+David Johnstone,Nov 30,Alas.Fairbanks,W,2-1, , , , , , , , , , , 
+Jacob Johnstone,Oct 5,Laurentian,W,3-2,0,0,0,2,0,0,0,0,0,0,4
+Jacob Johnstone,Oct 11,Minn.Duluth,L,2-1,0,0,0,0,0,0,0,0,0,0,1
+Jacob Johnstone,Oct 12,Minn.Duluth,T,1-1,0,0,0,2,0,0,0,0,0,0,2
+Jacob Johnstone,Oct 18,NotreDame,L,3-2,0,0,0,2,-1,0,0,0,0,0,3
+Jacob Johnstone,Oct 20,NotreDame,L,7-3,0,0,0,0,0,0,0,0,0,0,4
+Jacob Johnstone,Oct 25,NorthernMich.,L,2-0,0,0,0,0,0,0,0,0,0,0,2
+Jacob Johnstone,Oct 26,NorthernMich.,W,4-1, , , , , , , , , , , 
+Jacob Johnstone,Nov 1,Michigan,L,3-2, , , , , , , , , , , 
+Jacob Johnstone,Nov 2,Michigan,L,2-1,0,0,0,0,-1,0,0,0,0,0,1
+Jacob Johnstone,Nov 8,MichiganSt.,W,3-0, , , , , , , , , , , 
+Jacob Johnstone,Nov 9,MichiganSt.,W,3-2, , , , , , , , , , , 
+Jacob Johnstone,Nov 15,LakeSuperiorSt.,L,5-3, , , , , , , , , , , 
+Jacob Johnstone,Nov 16,LakeSuperiorSt.,W,2-1, , , , , , , , , , , 
+Jacob Johnstone,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,0,0,0,0,0,0,1
+Jacob Johnstone,Nov 23,Alas.Anchorage,T,2-2, , , , , , , , , , , 
+Jacob Johnstone,Nov 29,Alas.Fairbanks,W,3-2, , , , , , , , , , , 
+Jacob Johnstone,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,0,-1,0,0,0,0,0,2
+Tanner Kero,Oct 5,Laurentian,W,3-2,0,2,2,0,1,0,0,0,0,0,1
+Tanner Kero,Oct 11,Minn.Duluth,L,2-1,0,1,1,2,0,0,0,0,0,0,1
+Tanner Kero,Oct 12,Minn.Duluth,T,1-1,0,0,0,0,0,0,0,0,0,0,2
+Tanner Kero,Oct 18,NotreDame,L,3-2,0,0,0,0,-1,0,0,0,0,0,0
+Tanner Kero,Oct 20,NotreDame,L,7-3,0,0,0,0,-1,0,0,0,0,0,3
+Tanner Kero,Oct 25,NorthernMich.,L,2-0,0,0,0,0,-1,0,0,0,0,0,5
+Tanner Kero,Oct 26,NorthernMich.,W,4-1,0,0,0,0,-1,0,0,0,0,0,4
+Tanner Kero,Nov 1,Michigan,L,3-2,0,0,0,0,0,0,0,0,0,0,1
+Tanner Kero,Nov 2,Michigan,L,2-1,0,0,0,0,0,0,0,0,0,0,3
+Tanner Kero,Nov 8,MichiganSt.,W,3-0,1,1,2,0,2,0,0,0,0,0,5
+Tanner Kero,Nov 9,MichiganSt.,W,3-2,1,1,2,0,1,1,0,0,0,0,3
+Tanner Kero,Nov 15,LakeSuperiorSt.,L,5-3,0,1,1,0,-2,0,0,0,0,0,2
+Tanner Kero,Nov 16,LakeSuperiorSt.,W,2-1,0,1,1,0,1,0,0,0,0,0,8
+Tanner Kero,Nov 22,Alas.Anchorage,L,3-1,1,0,1,0,-1,1,0,0,0,0,1
+Tanner Kero,Nov 23,Alas.Anchorage,T,2-2,1,0,1,0,0,1,0,0,0,0,4
+Tanner Kero,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,-1,0,0,0,0,0,3
+Tanner Kero,Nov 30,Alas.Fairbanks,W,2-1,1,1,2,2,0,0,1,0,1,0,1
+Chris Leibinger,Oct 5,Laurentian,W,3-2,0,1,1,0,0,0,0,0,0,0,3
+Chris Leibinger,Oct 11,Minn.Duluth,L,2-1,1,0,1,2,0,0,1,0,0,0,1
+Chris Leibinger,Oct 12,Minn.Duluth,T,1-1,0,0,0,0,0,0,0,0,0,0,0
+Chris Leibinger,Oct 18,NotreDame,L,3-2,0,0,0,2,-1,0,0,0,0,0,2
+Chris Leibinger,Oct 20,NotreDame,L,7-3,0,1,1,0,3,0,0,0,0,0,1
+Chris Leibinger,Oct 25,NorthernMich.,L,2-0,0,0,0,15,0,0,0,0,0,0,2
+Chris Leibinger,Oct 26,NorthernMich.,W,4-1,0,0,0,0,1,0,0,0,0,0,1
+Chris Leibinger,Nov 1,Michigan,L,3-2,0,0,0,0,1,0,0,0,0,0,0
+Chris Leibinger,Nov 2,Michigan,L,2-1,0,0,0,0,0,0,0,0,0,0,1
+Chris Leibinger,Nov 8,MichiganSt.,W,3-0,0,0,0,0,1,0,0,0,0,0,2
+Chris Leibinger,Nov 9,MichiganSt.,W,3-2,0,0,0,0,1,0,0,0,0,0,3
+Chris Leibinger,Nov 15,LakeSuperiorSt.,L,5-3,0,0,0,0,-2,0,0,0,0,0,2
+Chris Leibinger,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,4,-1,0,0,0,0,0,2
+Chris Leibinger,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,0,0,0,0,0,0,2
+Chris Leibinger,Nov 23,Alas.Anchorage,T,2-2,0,0,0,4,1,0,0,0,0,0,1
+Chris Leibinger,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,0,0,0,0,0,0,0
+Chris Leibinger,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,0,0,0,0,0,0,0,2
+Mike Neville,Oct 5,Laurentian,W,3-2,0,0,0,0,0,0,0,0,0,0,3
+Mike Neville,Oct 11,Minn.Duluth,L,2-1,0,0,0,0,-1,0,0,0,0,0,0
+Mike Neville,Oct 12,Minn.Duluth,T,1-1,1,0,1,0,1,0,0,0,0,1,2
+Mike Neville,Oct 18,NotreDame,L,3-2,0,0,0,0,0,0,0,0,0,0,0
+Mike Neville,Oct 20,NotreDame,L,7-3,0,1,1,15,1,0,0,0,0,0,1
+Mike Neville,Oct 25,NorthernMich.,L,2-0,0,0,0,15,0,0,0,0,0,0,0
+Mike Neville,Oct 26,NorthernMich.,W,4-1,0,2,2,2,2,0,0,0,0,0,2
+Mike Neville,Nov 1,Michigan,L,3-2,0,0,0,0,0,0,0,0,0,0,1
+Mike Neville,Nov 2,Michigan,L,2-1,0,0,0,0,0,0,0,0,0,0,0
+Mike Neville,Nov 8,MichiganSt.,W,3-0,0,0,0,0,1,0,0,0,0,0,0
+Mike Neville,Nov 9,MichiganSt.,W,3-2,0,0,0,0,-1,0,0,0,0,0,0
+Mike Neville,Nov 15,LakeSuperiorSt.,L,5-3,0,1,1,0,1,0,0,0,0,0,1
+Mike Neville,Nov 16,LakeSuperiorSt.,W,2-1,0,1,1,0,1,0,0,0,0,0,1
+Mike Neville,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,0,0,0,0,0,0,1
+Mike Neville,Nov 23,Alas.Anchorage,T,2-2,0,1,1,0,1,0,0,0,0,0,0
+Mike Neville,Nov 29,Alas.Fairbanks,W,3-2,0,1,1,0,2,0,0,0,0,0,1
+Mike Neville,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,0,0,0,0,0,0,0,0
+Alex Petan,Oct 5,Laurentian,W,3-2,3,0,3,0,2,0,0,0,1,0,9
+Alex Petan,Oct 11,Minn.Duluth,L,2-1,0,0,0,0,-1,0,0,0,0,0,1
+Alex Petan,Oct 12,Minn.Duluth,T,1-1,0,0,0,0,0,0,0,0,0,0,6
+Alex Petan,Oct 18,NotreDame,L,3-2,0,0,0,2,0,0,0,0,0,0,0
+Alex Petan,Oct 20,NotreDame,L,7-3,1,0,1,21,-1,0,0,0,0,0,2
+Alex Petan,Oct 25,NorthernMich.,L,2-0,0,0,0,0,-1,0,0,0,0,0,3
+Alex Petan,Oct 26,NorthernMich.,W,4-1,1,0,1,0,1,0,0,0,0,0,2
+Alex Petan,Nov 1,Michigan,L,3-2,0,1,1,0,0,0,0,0,0,0,5
+Alex Petan,Nov 2,Michigan,L,2-1,0,0,0,2,0,0,0,0,0,0,2
+Alex Petan,Nov 8,MichiganSt.,W,3-0,1,0,1,0,2,0,0,0,0,0,3
+Alex Petan,Nov 9,MichiganSt.,W,3-2,1,1,2,0,2,0,0,0,1,0,2
+Alex Petan,Nov 15,LakeSuperiorSt.,L,5-3,1,0,1,7,-1,1,0,0,0,0,5
+Alex Petan,Nov 16,LakeSuperiorSt.,W,2-1,1,0,1,0,1,0,0,0,0,0,4
+Alex Petan,Nov 22,Alas.Anchorage,L,3-1,0,1,1,2,-1,0,0,0,0,0,1
+Alex Petan,Nov 23,Alas.Anchorage,T,2-2,0,1,1,0,0,0,0,0,0,0,3
+Alex Petan,Nov 29,Alas.Fairbanks,W,3-2,2,1,3,0,2,0,0,0,1,0,5
+Alex Petan,Nov 30,Alas.Fairbanks,W,2-1,0,1,1,0,0,0,0,0,0,0,3
+Blake Pietila,Oct 5,Laurentian,W,3-2,0,0,0,0,0,0,0,0,0,0,3
+Blake Pietila,Oct 11,Minn.Duluth,L,2-1,0,0,0,17,-1,0,0,0,0,0,0
+Blake Pietila,Oct 12,Minn.Duluth,T,1-1, , , , , , , , , , , 
+Blake Pietila,Oct 18,NotreDame,L,3-2,0,0,0,2,-1,0,0,0,0,0,1
+Blake Pietila,Oct 20,NotreDame,L,7-3,0,1,1,2,0,0,0,0,0,0,1
+Blake Pietila,Oct 25,NorthernMich.,L,2-0,0,0,0,0,-1,0,0,0,0,0,3
+Blake Pietila,Oct 26,NorthernMich.,W,4-1,0,0,0,0,-1,0,0,0,0,0,2
+Blake Pietila,Nov 1,Michigan,L,3-2,1,0,1,0,-1,1,0,0,0,0,4
+Blake Pietila,Nov 2,Michigan,L,2-1,0,0,0,2,0,0,0,0,0,0,5
+Blake Pietila,Nov 8,MichiganSt.,W,3-0,0,2,2,0,2,0,0,0,0,0,3
+Blake Pietila,Nov 9,MichiganSt.,W,3-2,0,2,2,2,1,0,0,0,0,0,2
+Blake Pietila,Nov 15,LakeSuperiorSt.,L,5-3,0,1,1,0,-2,0,0,0,0,0,3
+Blake Pietila,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,0,1,0,0,0,0,0,5
+Blake Pietila,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,-1,0,0,0,0,0,4
+Blake Pietila,Nov 23,Alas.Anchorage,T,2-2,0,0,0,0,0,0,0,0,0,0,3
+Blake Pietila,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,-1,0,0,0,0,0,0
+Blake Pietila,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,15,0,0,0,0,0,0,0
+Dennis Rix,Oct 5,Laurentian,W,3-2,0,0,0,2,0,0,0,0,0,0,4
+Dennis Rix,Oct 11,Minn.Duluth,L,2-1,0,0,0,0,0,0,0,0,0,0,2
+Dennis Rix,Oct 12,Minn.Duluth,T,1-1,0,0,0,0,0,0,0,0,0,0,3
+Dennis Rix,Oct 18,NotreDame,L,3-2,0,0,0,4,1,0,0,0,0,0,3
+Dennis Rix,Oct 20,NotreDame,L,7-3,0,0,0,0,0,0,0,0,0,0,3
+Dennis Rix,Oct 25,NorthernMich.,L,2-0,0,0,0,4,0,0,0,0,0,0,1
+Dennis Rix,Oct 26,NorthernMich.,W,4-1,0,0,0,2,0,0,0,0,0,0,2
+Dennis Rix,Nov 1,Michigan,L,3-2,0,0,0,0,-2,0,0,0,0,0,1
+Dennis Rix,Nov 2,Michigan,L,2-1,1,0,1,0,1,0,0,0,0,0,1
+Dennis Rix,Nov 8,MichiganSt.,W,3-0,0,0,0,0,0,0,0,0,0,0,1
+Dennis Rix,Nov 9,MichiganSt.,W,3-2,0,0,0,0,0,0,0,0,0,0,2
+Dennis Rix,Nov 15,LakeSuperiorSt.,L,5-3,0,0,0,0,-1,0,0,0,0,0,1
+Dennis Rix,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,6,0,0,0,0,0,0,4
+Dennis Rix,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,0,0,0,0,0,0,2
+Dennis Rix,Nov 23,Alas.Anchorage,T,2-2,0,0,0,0,0,0,0,0,0,0,0
+Dennis Rix,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,0,0,0,0,0,0,1
+Dennis Rix,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,0,1,0,0,0,0,0,1
+Daniel Sova,Oct 5,Laurentian,W,3-2, , , , , , , , , , , 
+Daniel Sova,Oct 11,Minn.Duluth,L,2-1, , , , , , , , , , , 
+Daniel Sova,Oct 12,Minn.Duluth,T,1-1, , , , , , , , , , , 
+Daniel Sova,Oct 18,NotreDame,L,3-2, , , , , , , , , , , 
+Daniel Sova,Oct 20,NotreDame,L,7-3, , , , , , , , , , , 
+Daniel Sova,Oct 25,NorthernMich.,L,2-0, , , , , , , , , , , 
+Daniel Sova,Oct 26,NorthernMich.,W,4-1, , , , , , , , , , , 
+Daniel Sova,Nov 1,Michigan,L,3-2, , , , , , , , , , , 
+Daniel Sova,Nov 2,Michigan,L,2-1, , , , , , , , , , , 
+Daniel Sova,Nov 8,MichiganSt.,W,3-0, , , , , , , , , , , 
+Daniel Sova,Nov 9,MichiganSt.,W,3-2, , , , , , , , , , , 
+Daniel Sova,Nov 15,LakeSuperiorSt.,L,5-3, , , , , , , , , , , 
+Daniel Sova,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,0,1,0,0,0,0,0,1
+Daniel Sova,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,-2,0,0,0,0,0,3
+Daniel Sova,Nov 23,Alas.Anchorage,T,2-2, , , , , , , , , , , 
+Daniel Sova,Nov 29,Alas.Fairbanks,W,3-2, , , , , , , , , , , 
+Daniel Sova,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,0,0,0,0,0,0,0,0
+Brad Stebner,Oct 5,Laurentian,W,3-2,0,0,0,0,-2,0,0,0,0,0,0
+Brad Stebner,Oct 11,Minn.Duluth,L,2-1,0,0,0,0,0,0,0,0,0,0,0
+Brad Stebner,Oct 12,Minn.Duluth,T,1-1,0,0,0,2,1,0,0,0,0,0,0
+Brad Stebner,Oct 18,NotreDame,L,3-2,0,0,0,2,0,0,0,0,0,0,0
+Brad Stebner,Oct 20,NotreDame,L,7-3,0,0,0,2,0,0,0,0,0,0,0
+Brad Stebner,Oct 25,NorthernMich.,L,2-0,0,0,0,4,-1,0,0,0,0,0,0
+Brad Stebner,Oct 26,NorthernMich.,W,4-1,0,0,0,0,1,0,0,0,0,0,3
+Brad Stebner,Nov 1,Michigan,L,3-2,0,0,0,2,-2,0,0,0,0,0,0
+Brad Stebner,Nov 2,Michigan,L,2-1,0,0,0,0,-1,0,0,0,0,0,0
+Brad Stebner,Nov 8,MichiganSt.,W,3-0,0,0,0,0,2,0,0,0,0,0,1
+Brad Stebner,Nov 9,MichiganSt.,W,3-2,0,0,0,0,0,0,0,0,0,0,1
+Brad Stebner,Nov 15,LakeSuperiorSt.,L,5-3,0,1,1,2,0,0,0,0,0,0,0
+Brad Stebner,Nov 16,LakeSuperiorSt.,W,2-1, , , , , , , , , , , 
+Brad Stebner,Nov 22,Alas.Anchorage,L,3-1, , , , , , , , , , , 
+Brad Stebner,Nov 23,Alas.Anchorage,T,2-2,0,0,0,2,0,0,0,0,0,0,1
+Brad Stebner,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,2,0,0,0,0,0,0
+Brad Stebner,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,2,-1,0,0,0,0,0,1
+Reid Sturos,Oct 5,Laurentian,W,3-2,0,0,0,0,0,0,0,0,0,0,1
+Reid Sturos,Oct 11,Minn.Duluth,L,2-1, , , , , , , , , , , 
+Reid Sturos,Oct 12,Minn.Duluth,T,1-1, , , , , , , , , , , 
+Reid Sturos,Oct 18,NotreDame,L,3-2,0,0,0,2,-1,0,0,0,0,0,0
+Reid Sturos,Oct 20,NotreDame,L,7-3, , , , , , , , , , , 
+Reid Sturos,Oct 25,NorthernMich.,L,2-0, , , , , , , , , , , 
+Reid Sturos,Oct 26,NorthernMich.,W,4-1,0,0,0,2,0,0,0,0,0,0,0
+Reid Sturos,Nov 1,Michigan,L,3-2,0,0,0,2,-2,0,0,0,0,0,0
+Reid Sturos,Nov 2,Michigan,L,2-1, , , , , , , , , , , 
+Reid Sturos,Nov 8,MichiganSt.,W,3-0, , , , , , , , , , , 
+Reid Sturos,Nov 9,MichiganSt.,W,3-2, , , , , , , , , , , 
+Reid Sturos,Nov 15,LakeSuperiorSt.,L,5-3, , , , , , , , , , , 
+Reid Sturos,Nov 16,LakeSuperiorSt.,W,2-1, , , , , , , , , , , 
+Reid Sturos,Nov 22,Alas.Anchorage,L,3-1, , , , , , , , , , , 
+Reid Sturos,Nov 23,Alas.Anchorage,T,2-2,0,0,0,0,0,0,0,0,0,0,1
+Reid Sturos,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,0,0,0,0,0,0,1
+Reid Sturos,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,0,0,0,0,0,0,0,2
+Riley Sweeney,Oct 5,Laurentian,W,3-2,0,0,0,0,-1,0,0,0,0,0,4
+Riley Sweeney,Oct 11,Minn.Duluth,L,2-1,0,1,1,2,0,0,0,0,0,0,1
+Riley Sweeney,Oct 12,Minn.Duluth,T,1-1,0,0,0,0,0,0,0,0,0,0,0
+Riley Sweeney,Oct 18,NotreDame,L,3-2,0,1,1,0,0,0,0,0,0,0,3
+Riley Sweeney,Oct 20,NotreDame,L,7-3,0,0,0,2,-1,0,0,0,0,0,2
+Riley Sweeney,Oct 25,NorthernMich.,L,2-0,0,0,0,0,0,0,0,0,0,0,1
+Riley Sweeney,Oct 26,NorthernMich.,W,4-1,0,0,0,0,-1,0,0,0,0,0,1
+Riley Sweeney,Nov 1,Michigan,L,3-2,0,0,0,2,-1,0,0,0,0,0,1
+Riley Sweeney,Nov 2,Michigan,L,2-1,0,0,0,2,1,0,0,0,0,0,1
+Riley Sweeney,Nov 8,MichiganSt.,W,3-0,0,0,0,0,0,0,0,0,0,0,1
+Riley Sweeney,Nov 9,MichiganSt.,W,3-2,0,0,0,2,0,0,0,0,0,0,0
+Riley Sweeney,Nov 15,LakeSuperiorSt.,L,5-3,0,0,0,2,0,0,0,0,0,0,0
+Riley Sweeney,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,0,1,0,0,0,0,0,2
+Riley Sweeney,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,0,0,0,0,0,0,1
+Riley Sweeney,Nov 23,Alas.Anchorage,T,2-2,0,0,0,0,0,0,0,0,0,0,3
+Riley Sweeney,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,-1,0,0,0,0,0,2
+Riley Sweeney,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,0,0,0,0,0,0,0,1
+Max Vallis,Oct 5,Laurentian,W,3-2,0,0,0,2,0,0,0,0,0,0,1
+Max Vallis,Oct 11,Minn.Duluth,L,2-1,0,0,0,0,-1,0,0,0,0,0,0
+Max Vallis,Oct 12,Minn.Duluth,T,1-1,0,1,1,0,1,0,0,0,0,0,0
+Max Vallis,Oct 18,NotreDame,L,3-2, , , , , , , , , , , 
+Max Vallis,Oct 20,NotreDame,L,7-3,0,0,0,15,0,0,0,0,0,0,0
+Max Vallis,Oct 25,NorthernMich.,L,2-0, , , , , , , , , , , 
+Max Vallis,Oct 26,NorthernMich.,W,4-1,0,1,1,2,1,0,0,0,0,0,1
+Max Vallis,Nov 1,Michigan,L,3-2,0,0,0,0,0,0,0,0,0,0,1
+Max Vallis,Nov 2,Michigan,L,2-1,0,1,1,0,1,0,0,0,0,0,0
+Max Vallis,Nov 8,MichiganSt.,W,3-0,0,0,0,0,0,0,0,0,0,0,0
+Max Vallis,Nov 9,MichiganSt.,W,3-2, , , , , , , , , , , 
+Max Vallis,Nov 15,LakeSuperiorSt.,L,5-3,0,0,0,0,1,0,0,0,0,0,2
+Max Vallis,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,2,-1,0,0,0,0,0,1
+Max Vallis,Nov 22,Alas.Anchorage,L,3-1,0,0,0,0,-1,0,0,0,0,0,2
+Max Vallis,Nov 23,Alas.Anchorage,T,2-2, , , , , , , , , , , 
+Max Vallis,Nov 29,Alas.Fairbanks,W,3-2, , , , , , , , , , , 
+Max Vallis,Nov 30,Alas.Fairbanks,W,2-1, , , , , , , , , , , 
+Cliff Watson,Oct 5,Laurentian,W,3-2,0,0,0,0,0,0,0,0,0,0,0
+Cliff Watson,Oct 11,Minn.Duluth,L,2-1,0,0,0,0,-1,0,0,0,0,0,0
+Cliff Watson,Oct 12,Minn.Duluth,T,1-1,0,0,0,0,0,0,0,0,0,0,1
+Cliff Watson,Oct 18,NotreDame,L,3-2,0,0,0,0,0,0,0,0,0,0,0
+Cliff Watson,Oct 20,NotreDame,L,7-3,0,0,0,2,-1,0,0,0,0,0,0
+Cliff Watson,Oct 25,NorthernMich.,L,2-0,0,0,0,0,0,0,0,0,0,0,0
+Cliff Watson,Oct 26,NorthernMich.,W,4-1,0,0,0,0,-1,0,0,0,0,0,1
+Cliff Watson,Nov 1,Michigan,L,3-2,0,0,0,0,0,0,0,0,0,0,0
+Cliff Watson,Nov 2,Michigan,L,2-1,0,0,0,2,1,0,0,0,0,0,0
+Cliff Watson,Nov 8,MichiganSt.,W,3-0,0,0,0,0,0,0,0,0,0,0,1
+Cliff Watson,Nov 9,MichiganSt.,W,3-2,0,1,1,2,1,0,0,0,0,0,2
+Cliff Watson,Nov 15,LakeSuperiorSt.,L,5-3,0,0,0,0,1,0,0,0,0,0,3
+Cliff Watson,Nov 16,LakeSuperiorSt.,W,2-1,0,0,0,0,1,0,0,0,0,0,1
+Cliff Watson,Nov 22,Alas.Anchorage,L,3-1,0,0,0,2,0,0,0,0,0,0,1
+Cliff Watson,Nov 23,Alas.Anchorage,T,2-2,0,0,0,0,1,0,0,0,0,0,2
+Cliff Watson,Nov 29,Alas.Fairbanks,W,3-2,0,0,0,0,-1,0,0,0,0,0,0
+Cliff Watson,Nov 30,Alas.Fairbanks,W,2-1,0,0,0,2,1,0,0,0,0,0,0

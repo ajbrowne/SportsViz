@@ -7,8 +7,7 @@ username = 'sviztsp@gmail.com'
 password = 'vizvizviz'
 
 # Set the filename and collection
-filename = 'anderson_games.csv.xls'
-filenames = ['player_games','goalie_totals','scoring_totals']
+filenames = ['test']
 collection = None
 
 for name in filenames:
@@ -34,16 +33,16 @@ for name in filenames:
         sys.exit('ERROR: Unable to login')
 
     #deletes the old file so the new updated one can be entered
-    for doc in docsclient.GetAllResources():
-        if doc.title.text == 'player_games.xls' and name == 'player_games.xls':
-            docsclient.DeleteResource(doc, force=True)
-            break
-        if doc.title.text == 'goalie_totals.xls' and name == 'goalie_totals.xls':
-            docsclient.DeleteResource(doc, force=True)
-            break
-        if doc.title.text == 'scoring_totals.xls' and name == 'scoring_totals.xls':
-            docsclient.DeleteResource(doc, force=True)
-            break
+    # for doc in docsclient.GetAllResources():
+    #     if doc.title.text == 'player_games.xls' and name == 'player_games.xls':
+    #         docsclient.DeleteResource(doc, force=True)
+    #         break
+    #     if doc.title.text == 'goalie_totals.xls' and name == 'goalie_totals.xls':
+    #         docsclient.DeleteResource(doc, force=True)
+    #         break
+    #     if doc.title.text == 'scoring_totals.xls' and name == 'scoring_totals.xls':
+    #         docsclient.DeleteResource(doc, force=True)
+    #         break
 
     # The default root collection URI
     uri = 'https://docs.google.com/feeds/upload/create-session/default/private/full'

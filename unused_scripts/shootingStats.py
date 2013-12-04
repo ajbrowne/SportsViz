@@ -40,6 +40,7 @@ for eachstat in stats:
 					string = string.replace(' ', '')
 				else:
 					string = string.replace(' ', ',')
+				string = string.replace('+','')
 				f.write(string) 
 				count = count + 1
 			else:
@@ -49,6 +50,7 @@ for eachstat in stats:
 						string = string.replace(' ', '')
 					else:
 						string = string.replace(' ', ',')
+					string = string.replace('+','')
 					f.write(string)
 					count = count + 1
 					check = check + 1

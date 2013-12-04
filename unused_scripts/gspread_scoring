@@ -1,0 +1,28 @@
+import csv, xlwt, gspread
+
+# Login with Google account
+gc = gspread.login('sviztsp@gmail.com', 'vizvizviz')
+
+files = ['scoring_totals']
+letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N','O']
+
+for i in files:
+	f=open(i, 'rb')
+	wks = gc.open(i).sheet1
+	g = csv.reader ((f), delimiter=",")
+	iterate = 0
+	row_check = 1
+
+	for rowi, row in enumerate(g):
+		for coli, value in enumerate(row):
+			add = letters[iterate]
+			insert = add
+			insert += str(row_check)
+			if letters[iterate] != 'O':
+				wks.update_acell(insert, value)
+				iterate+=1
+			else:
+				iterate = 0
+				row_check+=1
+
+

@@ -27,7 +27,13 @@ urlArray = ['http://www.michigantechhuskies.com/sports/mice/2013-14/bios/anderso
 	    'http://www.michigantechhuskies.com/sports/mice/2013-14/bios/sweeney_riley_c6fd',
 	    'http://www.michigantechhuskies.com/sports/mice/2013-14/bios/vallis_max_dqbr',
 	    'http://www.michigantechhuskies.com/sports/mice/2013-14/bios/watson_cliff_obyg']
-f = open('player_games', 'w')
+column_array = ['Name', 'Date', 'Opponent', 'Record', '', 'Goals', 'Assists', 'Points', 'PIMS', '+/-', 'PPG', 'SHG', 'ENG', 'GWG', 'GTG', 'Shots']
+f = open('test', 'w')
+for header in column_array:
+	if (header != 'Shots'):
+		f.write(header + ',')
+	else:
+		f.write(header + '\n')	
 for x in urlArray:
 	url = x+'?view=gamelog'
 	soup = BeautifulSoup(urllib.urlopen(url).read())
@@ -40,7 +46,7 @@ for x in urlArray:
 		if(count == 1):
 			name = name.string
 	
-	f = open('player_games', 'a')
+	f = open('test', 'a')
 	i = 0
 	j = 0
 	data = []
@@ -57,6 +63,9 @@ for x in urlArray:
 		string = string.replace('\n', '')
 		string = string.replace('\r', '')
 		string = string.replace("at", '')
+		string = string.replace('+','')
+		if len(string) == 1:
+			string = string.replace('-', ' ')
 		if i == 0:
 			f.write(name + ',')
 		if i < 13:	
