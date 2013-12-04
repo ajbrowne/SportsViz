@@ -41,7 +41,7 @@ function init(){
       //Turn on some options so the code doesn't die when player is selected
       strings[1]=1;
       strings[2]=1;
-    document.getElementById("playerName").innerHTML="Jimmy Davis <small> MTU</small>";
+    document.getElementById("playerName").innerHTML="Brad Stebner <small> MTU</small>";
    //drawVisualizationPie();
 }
     
