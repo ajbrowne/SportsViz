@@ -41,7 +41,7 @@ function updateViz(){
      var fullQuery = "SELECT A"+fields;
     
     var sendQuery = new google.visualization.Query(dataSourceUrl+fullQuery);
-    document.getElementById("modalTitle").innerHTML=fullQuery;
+    //document.getElementById("modalTitle").innerHTML=fullQuery;
     //visualization = new google.visualization.BarChart(document.getElementById('visualization_div'));
     //updateTitle();
     //document.getElementById("playerName").innerHTML=fullQuery;
@@ -122,13 +122,13 @@ function updateViz(){
     
 function update(){
   //var frm = document.querySelectorAll(".btn-group > button.btn");
-   var message = "Your chose: ";
+   var message = "Chart Options";
 
    //For each checkbox see if it has been checked, record the value.
-   if(document.getElementById("points").checked){
-    message=message+"@@@";
+   // if(document.getElementById("points").checked){
+   //  message=message+"@@@";
     //strings[3]=1;
-   }
+   // }
    
    
       
