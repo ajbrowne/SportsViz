@@ -156,7 +156,7 @@ document.location.href = noddy.href;
         </div>
     </div>-->
     
-    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -171,12 +171,21 @@ document.location.href = noddy.href;
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
+      <li><a href="./about.html">About Us</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Michigan Tech Hockey <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="./stats.html">Team at a glance</a></li>
           <li><a href="./player.html">Players</a></li>
+          
           <li><a href="./playerGame.html">Player Trends</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Broomball <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="./prepareBroomball.html">Get Started</a></li>
+          <li><a href="./bbhelp.html">Help</a></li>
         </ul>
       </li>
     </ul>
@@ -270,11 +279,11 @@ document.location.href = noddy.href;
                             <option>Reid Sturos</option>
                             <option>Max Vallis</option>
                         </optgroup>
-                        <optgroup label="Goalies">
+                        <!--<optgroup label="Goalies">
                           <option>Pheonix Copley</option>
                           <option>Jamie Phillips</option>
                           <option>Matt Wintjes</option>
-                        </optgroup>
+                        </optgroup>-->
                     </select>
             </div>
         </form>
@@ -431,9 +440,9 @@ document.location.href = noddy.href;
   
  <div class="container">
   
-    <div class="col-md-4"><center>Penalty Minutes</center><div id="penalty_div" style="height:300px;"></div></div>
-    <div class="col-md-4"><center>Plus / Minus</center><div id="pm_gauge" style="height:300px;"></div></div>
-    <div class="col-md-4"><center>Points</center><div id="penalty_div2" style="height:300px;"></div</div>
+    <div class="col-md-4"><center>Penalty Minutes<div id="penalty_div" style="height:300px;"></div></center></div>
+    <div class="col-md-4"><center>Plus / Minus<div id="pm_gauge" style="height:300px;"></div></center></div>
+    <div class="col-md-4"><center>Points<div id="penalty_div2" style="height:300px;"></div></center></div>
   </div>
  
 
@@ -442,6 +451,7 @@ document.location.href = noddy.href;
     
   </body>
  <div id="buffer"></div>
+ 
   <footer>
     <center>
     Baja Enterprises<br>

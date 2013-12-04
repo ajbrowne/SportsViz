@@ -13,7 +13,7 @@ var name;
 var query="";
 var title;
 
-var dataSourceUrl='https://docs.google.com/spreadsheet/tq?key=0Av1GLm4EhP6TdEJWbWVpWjFrMXI4N0pHUGVCclJEMVE&tq=';
+var dataSourceUrl='https://docs.google.com/spreadsheet/tq?key=0Av1GLm4EhP6TdEQ0M2pZN1U0Ym1UTkNRNHROUGh1Y2c&tq=';
 //var values = new Array("'Games Played'","Goals","Assists","Points","PIMS","PPG","SHG","ENG","GWG","GTG","Shots");
 //strings[0]=1;
 //strings[10]=1;

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sports Viz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link rel="apple-touch-icon" href="/custom_icon.png">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <script type="text/javascript">
+
+if(("standalone" in window.navigator) && window.navigator.standalone){
+
+var noddy, remotes = false;
+
+document.addEventListener('click', function(event) {
+
+noddy = event.target;
+
+while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+noddy = noddy.parentNode;
+}
+
+if('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
+{
+event.preventDefault();
+document.location.href = noddy.href;
+}
+
+},false);
+}
+</script>
+        <style>
+            
+            body{
+              margin-top: 60px;
+                background-color:#ffffff;
+                width: 80%;
+                margin-left:auto;
+                margin-right:auto;
+                
+            }
+            
+            footer{
+                padding-top:5px;
+                padding-left:11px;
+                padding-right:11px;
+                padding-bottom:11px;
+                color: #000000;
+            }
+            
+           #chartOptions{
+            margin-top: 80px;
+           }
+            
+           #menubar-contents{
+            margin-left: 10px;
+           }
+            
+            #mainFrame{
+              /*background-color: #ffffff;*/
+              padding-bottom: 0px;
+              
+              
+            }
+            
+            #mainFrame playerHeader{
+              /*background-color: #ffffff;*/
+              padding-top: 0px;
+              
+            }
+            
+            #chartOptions button{
+              width:150px;
+            }
+            
+            #break{
+                border-bottom: solid 1px;
+            }
+            
+            #buffer{
+                /*background-image: -webkit-linear-gradient(top,#dddddd,#000000);
+                background-image: -moz-linear-gradient(top,#dddddd,#000000);*/
+                height:6px;
+            }
+           
+            @media (max-width: 480px) {
+               body{
+                width: 100%;
+               }
+               
+               #about p{
+                width: 100%;
+                }
+            
+                #break{
+                    border-bottom: solid 1px;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                #workbox{
+                    width: auto;
+                    margin-right: 24px;
+                }
+            }
+          
+            
+        </style>
+        
+  
+  
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
+    <script type="text/javascript" src="./typeahead.js"></script>
+    
+    <script type="text/javascript" src="bootstrap-select.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-select.css">
+    
+    <script type="text/javascript">
+        $(window).on('load', function () {
+
+            $('.selectpicker').selectpicker({
+                'selectedText': 'cat'
+            });
+
+            // $('.selectpicker').selectpicker('hide');
+        });
+    </script>
+    
+  </head>
+    
+  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="./index.html">SportsViz</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="./about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Michigan Tech Hockey <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="./stats.html">Team at a glance</a></li>
+          <li><a href="./player.html">Players</a></li>
+          
+          <li><a href="./playerGame.html">Player Trends</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Broomball <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="./prepareBroomball.html">Get Started</a></li>
+          <li><a href="./bbhelp.html">Help</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+  
+<body data-spy="scroll" data-target="#menubar" onload="init()">
+  <div class="jumbotron">
+  <h1>We like things simple.</h1>
+  <p>And so should you.</p>
+</div>
+    
+    <div class="container-fluid" id="about">
+        <h1>About Us</h1>
+        <p class="lead">We set out to simplifiy data.</p>
+        <p>Baja Enterprises is made up of a team of four college students from Michigan Tech University who all have a shared love for two things, sports and data. We decided to put that passion to use and allow others to see sports data in a way that's not just numbers on paper. By visualizing hockey data, we took something that was considered boring and only for individuals who were "knowledgeable" into something that we all can use.</p>
+        <p class="lead">What is data visualization?</p>
+        <p>Data visualization is taking data and making them into charts and trends that are easy for anyone to understand. Doing this allows anyone who has even a slight interest in a subject to view and understand more data than could possibly be digested form tables alone.</p>
+        <h1>How do I use this site?</h1>
+        <p>Navigate yourself to the page headers above and take a look around! We provide data viz for the Michigan Tech Hockey team as well as the individual player statistics! Feel free to click through the players and learn things about them you never had before!</p>
+    </div>
+  </body>
+ <div id="buffer"></div>
+  <footer>
+    <center>
+    Baja Enterprises<br>
+    <small><font color="#8f8f8f">engineering | design | development</font></small><br>
+    </center>
+  </footer>
+  
+</html>

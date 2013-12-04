@@ -13,7 +13,7 @@ var title;
 var startDate="";
 var endDate="";
 
-var dataSourceUrl='https://docs.google.com/spreadsheet/tq?key=0Av1GLm4EhP6TdEJWbWVpWjFrMXI4N0pHUGVCclJEMVE&tq=';
+var dataSourceUrl='https://docs.google.com/spreadsheet/tq?key=0Av1GLm4EhP6TdEQ0M2pZN1U0Ym1UTkNRNHROUGh1Y2c&tq=';
 var dataSourceUrl2=dataSourceUrl;
 var dataSourceUrl3=dataSourceUrl;
 
@@ -324,7 +324,7 @@ function drawVisualizationGauge(){
           }
      
       
-      var query4 = "select sum(J)  WHERE A="+query;
+      var query4 = "select sum(J)  WHERE A="+query+" label sum(J) ''";
   
       var query4 = new google.visualization.Query(dataSourceUrl+query4);
       visualization4 = new google.visualization.Gauge(document.getElementById('pm_gauge'));

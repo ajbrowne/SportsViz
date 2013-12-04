@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sports Viz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link rel="apple-touch-icon" href="/custom_icon.png">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <script type="text/javascript">
+
+if(("standalone" in window.navigator) && window.navigator.standalone){
+
+var noddy, remotes = false;
+
+document.addEventListener('click', function(event) {
+
+noddy = event.target;
+
+while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+noddy = noddy.parentNode;
+}
+
+if('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
+{
+event.preventDefault();
+document.location.href = noddy.href;
+}
+
+},false);
+}
+</script>
+        <style>
+            
+            body{
+              margin-top: 60px;
+                background-color:#ffffff;
+                width: 80%;
+                margin-left:auto;
+                margin-right:auto;
+                
+            }
+            
+            footer{
+                padding-top:5px;
+                padding-left:11px;
+                padding-right:11px;
+                padding-bottom:11px;
+                color: #000000;
+            }
+            
+           #chartOptions{
+            margin-top: 80px;
+           }
+            
+           #menubar-contents{
+            margin-left: 10px;
+           }
+            
+            #mainFrame{
+              /*background-color: #ffffff;*/
+              padding-bottom: 0px;
+              
+              
+            }
+            
+            #mainFrame playerHeader{
+              /*background-color: #ffffff;*/
+              padding-top: 0px;
+              
+            }
+            
+            #chartOptions button{
+              width:150px;
+            }
+            
+            #break{
+                border-bottom: solid 1px;
+            }
+            
+            #buffer{
+                /*background-image: -webkit-linear-gradient(top,#dddddd,#000000);
+                background-image: -moz-linear-gradient(top,#dddddd,#000000);*/
+                height:6px;
+            }
+           
+            @media (max-width: 480px) {
+               body{
+                width: 100%;
+               }
+               
+               #about p{
+                width: 100%;
+                }
+                #about img{
+                  width: 75%;
+                }
+                #break{
+                    border-bottom: solid 1px;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+                #workbox{
+                    width: auto;
+                    margin-right: 24px;
+                }
+            }
+          
+            
+        </style>
+        
+  
+  
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
+    <script type="text/javascript" src="./typeahead.js"></script>
+    
+    <script type="text/javascript" src="bootstrap-select.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-select.css">
+    
+    <script type="text/javascript">
+        $(window).on('load', function () {
+
+            $('.selectpicker').selectpicker({
+                'selectedText': 'cat'
+            });
+
+            // $('.selectpicker').selectpicker('hide');
+        });
+    </script>
+    
+  </head>
+    
+  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="./index.html">SportsViz</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="./about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Michigan Tech Hockey <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="./stats.html">Team at a glance</a></li>
+          <li><a href="./player.html">Players</a></li>
+          
+          <li><a href="./playerGame.html">Player Trends</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Broomball <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="./prepareBroomball.html">Get Started</a></li>
+          <li><a href="./bbhelp.html">Help</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+  
+<body data-spy="scroll" data-target="#menubar" onload="init()">
+  <div class="jumbotron">
+  <h1>How to view Broomball stats</h1>
+  <p>It's easier than you think.</p>
+</div>
+    
+    <div class="container-fluid" id="about">
+      <h1>Navigate to a Broomball team on the Broomball website.</h1>
+      <p class="lead">Any old team will do!</p>
+      <p>Scroll down the page until you get to a table such as the one below.</p>
+      <img src="./img/bb1.png" class="img-rounded"><br><br>
+      <p>This is what we call our <b>data table</b>. It holds all of the stats for the team! Why is this important? Because we're going to use this table as the source for our visualization. Keep this page open!</p>
+      <h1>Next we need to open Google Docs</h1>
+      <p class="lead">Think of it as an easy way to store your data!</p>
+      <p>Create a new spreadsheet to store your data in!</p>
+      <img src="./img/bb2.png" class="img-rounded"><br><br>
+      <p class="lead">But what are we going to fill it with?</p>
+      <p>Go to back to the table on the Broomball website and copy the entire chart, headers and all and paste it into your Google Spreadsheet!</p>
+      <img src="./img/bb3.png" class="img-rounded"><br><br>
+      <img src="./img/bb4.png" class="img-rounded" style="width:75%;"><br><br>
+      <h1>Sharing is caring!</h1>
+      <p>Right now, your spreadsheet is only visible to yourself. We need to change that! Go to the <b>Share</b> button in the corner and click it! You should be brought to a page with the following settings.</p>
+      <img src="./img/bb5.png" class="img-rounded"><br><br>
+      <p>See the link that says change? Click that! You'll be brought to this page.</p>
+      <img src="./img/bb6.png" class="img-rounded"><br><br>
+      <p>Make your settings the same as in the picture and click save. The page should now show this. (of course we won't be the owner of your document!)</p>
+      <img src="./img/bb7.png" class="img-rounded"><br><br>
+      <h1>Get your key!</h1>
+      <p class="lead">It unlocks the world of visualizations!</p>
+      <p>Go to File -> Publish to the web... this will be where you go to get your key!</p>
+      <img src="./img/bb8.png" class="img-rounded"><br><br>
+      <p>Start the publishing!</p>
+      <img src="./img/bb9.png" class="img-rounded"><br><br>
+      <p>Your key will be in that same popup, just slightly below that top dialog! Your key is the part that is highlighted! Don't lose your key, it's what we will use to create the visualization!</p>
+      <img src="./img/bb10.png" class="img-rounded"><br><br>
+      <p class="lead"><b><a href="./prepareBroomball.html">Now you're ready to plot that data!</a></b></p>
+      
+    </div>
+  </body>
+ <div id="buffer"></div>
+  <footer>
+    <center>
+    Baja Enterprises<br>
+    <small><font color="#8f8f8f">engineering | design | development</font></small><br>
+    </center>
+  </footer>
+  
+</html>

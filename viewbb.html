@@ -113,7 +113,7 @@ document.location.href = noddy.href;
   
   
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="./playerNew.js"></script>
+    <script type="text/javascript" src="./BBplayerNew.js"></script>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="./dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
@@ -134,22 +134,7 @@ document.location.href = noddy.href;
     </script>
     
   </head>
-  
-  <!--<div class="navbar navbar-fixed-top navbar-inverse" id="menubar" role="navigation">
-        <div class="navbar-inner">
-            
-            <ul class="nav" id="menubar-contents">
-              <a class="brand" href="./index.html">SportsViz</a>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Michigan Tech Hockey<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="./stats.html">Team at a glance</a></li>
-                        <li><a href="./player.html">Players</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>-->
+
     
 <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
@@ -188,67 +173,13 @@ document.location.href = noddy.href;
 </nav>
   
 <body data-spy="scroll" data-target="#menubar" onload="init()">
-    
-    <!--<ul id="myTab" class="nav nav-tabs">
-              <li class="active"><a href="#points" data-toggle="tab">Points</a></li>
-              <li><a href="#player" data-toggle="tab">Player</a></li>
-            </ul>
-            <div id="myTabContent" class="tab-content">
-              <div class="tab-pane fade in active" id="points">
-                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-              </div>
-              <div class="tab-pane fade" id="player">
-                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
-              </div>
-
-            </div>-->
+   
   <div class="container" id="mainFrame">
     <div class="row">
   <div class="col-md-6">
-    <h1 id="playerName" >Michigan Tech Hockey</h1>
+    <h1 id="playerName" >Broomball Stats</h1>
   </div>
   <div class="col-md-6">
-    <form class="form-horizontal" role="form" style="width:150px;">
-            <div class="form-group">
-                    <select id="playerSearch" class="selectpicker show-tick form-control" multiple data-live-search="false" onchange="updateViz()">
-                        <optgroup label="Defense">
-                          <option>Jimmy Davis</option>
-                          <option>Justin Fillion</option>
-                          <option>Shane Hanna</option>
-                          <option>Walker Hyland</option>
-                          <option>Chris Leibinger</option>
-                          <option>Daniel Sova</option>
-                          <option>Brad Stebner</option>
-                          <option>Riley Sweeney</option>
-                          <option>Cliff Watson</option>
-                        </optgroup>
-                        <optgroup label="Forwards">
-                            <option>Patrick Anderson</option>
-                            <option>Brent Baltus</option>
-                            <option>CJ Eick</option>
-                            <option>Ryan Furne</option>
-                            <option>Malcolm Gould</option>
-                            <option>Tyler Heinonen</option>
-                            <option>Blake Hietala</option>
-                            <option>Daniel Holmberg</option>
-                            <option>David Johnstone</option>
-                            <option>Jacob Johnstone</option>
-                            <option>Tanner Kero</option>
-                            <option>Mike Neville</option>
-                            <option>Alex Petan</option>
-                            <option>Blake Pietila</option>
-                            <option>Dennis Rix</option>
-                            <option>Reid Sturos</option>
-                            <option>Max Vallis</option>
-                        </optgroup>
-                        <!--<optgroup label="Goalies">
-                          <option>Pheonix Copley</option>
-                          <option>Jamie Phillips</option>
-                          <option>Matt Wintjes</option>
-                        </optgroup>-->
-                    </select>
-            </div>
-        </form>
     <!-- Button trigger modal -->
   <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Graph Options</a>
   </div>
@@ -279,23 +210,15 @@ document.location.href = noddy.href;
                 <input type="checkbox" value="PIMS" id="pims"> Penalty Minutes
               </label>
               <label class="btn btn-primary">
-                <input type="checkbox" value="PPG" id="ppg"> Powerplay Goals
+                <input type="checkbox" value="Saves" id="saves"> Saves
               </label>
               <label class="btn btn-primary">
-                <input type="checkbox" value="SHG" id="shg"> Shorthanded Goals
+                <input type="checkbox" value="GM" id="gm"> Goalie Minutes
               </label>
               <label class="btn btn-primary">
-                <input type="checkbox" value="ENG" id="eng"> ENG
+                <input type="checkbox" value="GA" id="ga"> Goals Against
               </label>
-              <label class="btn btn-primary">
-                <input type="checkbox" value="GWG" id="gwg"> GWG
-              </label>
-              <label class="btn btn-primary">
-                <input type="checkbox" value="GTG" id="gtg"> GTG
-              </label>
-              <label class="btn btn-primary">
-                <input type="checkbox" value="Shots" id="shots"> Shots
-              </label>
+            
             </div>
           </div>
         <div class="modal-footer">
@@ -311,21 +234,6 @@ document.location.href = noddy.href;
     </div>-->
   </div> 
   <div class="container"  style="align: center; width: 100%; height: 600px;">
-    <!--<div class="span2">
-      <div class="btn-group btn-group-vertical" data-toggle="buttons-checkbox" id="chartOptions">
-       <button class="btn" id="Points">Points</button>
-        <button class="btn" id="Goals">Goals</button>
-        <button class="btn" id="Assists">Assists</button>
-        <button class="btn" id="PIMS">Penalty Minutes</button>
-        <button class="btn" id="PPG">Powerplay Goals</button>
-        <button class="btn" id="SHG">Shorthanded Goals</button>
-        <button class="btn" id="ENG">ENG</button>
-        <button class="btn" id="GWG">GWG</button>
-        <button class="btn" id="GTG">GTG</button>
-        <button class="btn" id="Shots">Shots</button>
-      </div>
-    </div>
-    <div class="span10">-->
       <div class="container-fluid" id="visualization_div" style="align: center; width: 100%; height: 600px;"></div>
     <!--</div>-->
   </div>

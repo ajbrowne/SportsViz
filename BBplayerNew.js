@@ -10,12 +10,12 @@ var name;
 var query="";
 var title;
 
-var dataSourceUrl='https://docs.google.com/spreadsheet/tq?key=0Av1GLm4EhP6TdEQ0M2pZN1U0Ym1UTkNRNHROUGh1Y2c&tq=';
+var dataSourceUrl='https://docs.google.com/spreadsheet/tq?key=0Av1GLm4EhP6TdDRVSk1zUE5ka3IyQVpVUlFpLTR5T0E&tq=';
 //var values = new Array("'Games Played'","Goals","Assists","Points","PIMS","PPG","SHG","ENG","GWG","GTG","Shots");
 //strings[0]=1;
 //strings[10]=1;
 var visualization;
-var values = new Array("'Games Played'","F","G","H","I","K","L","M","N","O","P");
+var values = new Array("'Games Played'","B","C","D","E","F","G","H","I");
   //window.onload = init();
 function init(){
       /*points.onclick = function() {
@@ -26,37 +26,25 @@ function init(){
         }
         //updateViz();
       }*/
-    strings[1]=1;
-      strings[2]=1;
+    //strings[1]=1;
+      //strings[2]=1;
    
 }
     
 function updateViz(){
       
-      
-      query="",i;
-      var count = 0;
-      for (i=0;i<playerSearch.options.length;i++) {
-       if (playerSearch.options[i].selected) {
-          if(count!=0){
-            query = query+"OR A=";
-          }
-            query = query + "'"+ playerSearch.options[i].text + "'";
-            count = count +1;
-        }
-      }
-    
+
+     
     var fields = getQuery();
     //var fullQuery = "SELECT Name, Goals, Assists, Points FROM 1gPQDMXOhPIteyigdbatmSdQJNyLH1ofQImUhkU0 WHERE Name IN ("+query+")";
-    if(count!=0){
-          var fullQuery = "SELECT A"+fields+" WHERE A="+query+" Group by A";
-          //document.getElementById("playerName").innerHTML=fullQuery;
-    } else {
-     var fullQuery = "SELECT A"+fields+" Group by A";
-    }
+  
+     var fullQuery = "SELECT A"+fields;
+    
     var sendQuery = new google.visualization.Query(dataSourceUrl+fullQuery);
+    document.getElementById("modalTitle").innerHTML=fullQuery;
     //visualization = new google.visualization.BarChart(document.getElementById('visualization_div'));
-    updateTitle();
+    //updateTitle();
+    //document.getElementById("playerName").innerHTML=fullQuery;
     sendQuery.send(handleQueryResponse);
 }
     
@@ -81,12 +69,14 @@ function updateViz(){
     }
     
     function drawViz(){
-     
-      var query = "select A, SUM(F), SUM(G)GROUP BY A";
+     dataSourceUrl='https://docs.google.com/spreadsheet/tq?'+window.location.search.substring(1)+'&tq=';
+      var query = "select A, B, C";
       
       var query = new google.visualization.Query(dataSourceUrl+query);
       visualization = new google.visualization.BarChart(document.getElementById('visualization_div'));
       query.send(handleQueryResponse);
+      //alert(window.location.search.substring(1));
+      
     }
     
     function handleQueryResponse(response) {
@@ -124,7 +114,7 @@ function updateViz(){
       var str = "";
       for (i=0;i<11;i++){
         if(strings[i]==1){
-          str=str+ ", sum("+values[i]+")";
+          str=str+ ", "+values[i];
         }
       }
       return str;
@@ -166,36 +156,22 @@ function update(){
         } else {
           strings[4]=0;
         }
-         if(document.getElementById("ppg").checked){
+         if(document.getElementById("saves").checked){
           strings[5]=1;
         } else {
           strings[5]=0;
         }
-         if(document.getElementById("shg").checked){
+         if(document.getElementById("gm").checked){
           strings[6]=1;
         } else {
           strings[6]=0;
         }
-         if(document.getElementById("eng").checked){
+         if(document.getElementById("ga").checked){
           strings[7]=1;
         } else {
           strings[7]=0;
         }
-         if(document.getElementById("gwg").checked){
-          strings[8]=1;
-        } else {
-          strings[8]=0;
-        }
-         if(document.getElementById("gtg").checked){
-          strings[9]=1;
-        } else {
-          strings[9]=0;
-        }
-         if(document.getElementById("shots").checked){
-          strings[10]=1;
-        } else {
-          strings[10]=0;
-        }
+         
       
    
    
