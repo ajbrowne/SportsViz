@@ -132,13 +132,13 @@ function updateViz(){
     
 function update(){
   //var frm = document.querySelectorAll(".btn-group > button.btn");
-   var message = "Your chose: ";
+   var message = "Chart Options";
 
-   //For each checkbox see if it has been checked, record the value.
-   if(document.getElementById("points").checked){
-    message=message+"@@@";
-    //strings[3]=1;
-   }
+   // //For each checkbox see if it has been checked, record the value.
+   // if(document.getElementById("points").checked){
+   //  message=message+"@@@";
+   //  //strings[3]=1;
+   // }
    
    
       
