@@ -84,6 +84,9 @@ document.location.href = noddy.href;
                 background-image: -moz-linear-gradient(top,#dddddd,#000000);*/
                 height:6px;
             }
+            #about img{
+              height:300px;
+            }
            
             @media (max-width: 480px) {
                body{
@@ -93,7 +96,9 @@ document.location.href = noddy.href;
                #about p{
                 width: 100%;
                 }
-            
+                #about img{
+                  width: 75%;
+                }
                 #break{
                     border-bottom: solid 1px;
                     width: 90%;
@@ -113,7 +118,6 @@ document.location.href = noddy.href;
   
   
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="./BBplayerNew.js"></script>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="./dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/twitterbootstrap/js/bootstrap-tab.js"></script>
@@ -134,9 +138,8 @@ document.location.href = noddy.href;
     </script>
     
   </head>
-
     
-<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -174,77 +177,29 @@ document.location.href = noddy.href;
 </nav>
   
 <body data-spy="scroll" data-target="#menubar" onload="init()">
-   
-  <div class="container" id="mainFrame">
-    <div class="row">
-  <div class="col-md-6">
-    <h1 id="playerName" >Broomball Stats</h1>
-  </div>
-  <div class="col-md-6">
-    <!-- Button trigger modal -->
-  <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Graph Options</a>
-  </div>
+  <div class="jumbotron">
+  <h1>How to install SportsViz on iOS</h1>
+  <p>It's so easy a caveman could do it.</p>
 </div>
     
-    
-      <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="modalTitle">Chart Options</h4>
-          </div>
-          <div class="modal-body">
-          
-            <div class="btn-group" data-toggle="buttons" id="statOptions">
-              <label class="btn btn-primary">
-                <input type="checkbox" value="Points" id="points"> Points
-              </label>
-              <label class="btn btn-primary">
-                <input type="checkbox" value="Goals" id="goals" checked> Goals
-              </label>
-              <label class="btn btn-primary">
-                <input type="checkbox" value="Assists" id="assists" checked> Assists
-              </label>
-              <label class="btn btn-primary">
-                <input type="checkbox" value="PIMS" id="pims"> Penalty Minutes
-              </label>
-              <label class="btn btn-primary">
-                <input type="checkbox" value="Saves" id="saves"> Saves
-              </label>
-              <label class="btn btn-primary">
-                <input type="checkbox" value="GM" id="gm"> Goalie Minutes
-              </label>
-              <label class="btn btn-primary">
-                <input type="checkbox" value="GA" id="ga"> Goals Against
-              </label>
-            
-            </div>
-          </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="update()">Save changes</button>
-        </div>
-        </div><!-- /.modal-content -->
-     </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-  </div>
-    <!--<div class="span2 offset1">
-      <button class="btn btn-primary" onclick="drawVisualization2()">Submit</button>
-    </div>-->
-  </div> 
-  <div class="container"  style="align: center; width: 100%; height: 600px;">
-      <div class="container-fluid" id="visualization_div" style="align: center; width: 100%; height: 600px;"></div>
-    <!--</div>-->
-  </div>
-  
+    <div class="container-fluid" id="about">
+      <h1>Open up Safari on your iOS device</h1>
+      <img src="./img/ss1.png" class="img-rounded"><br><br>
+      <p>You need to use Safari and not Chrome (or any other browser) as we will need to install the app from Safari!</p>
+      <h1>Navigate to SportsViz in your browser and stay on the home page!</h1>
+      <p class="lead">If you didn't know the URL, how are you reading this?</p>
+      <p>Open up the little menu icon in the center.</p>
+      <img src="./img/ss2.png" class="img-rounded">   <img src="./img/ss3.png" class="img-rounded"><br><br>
+      <p class="lead">See the "Add to Home Screen" button? Click that!</p>
+      <p>What that does is allows the user to add the application to their home screen, just like other apps! Since we have written code to allow the user to use this method to install SportsViz as an app!</p>
+      <img src="./img/ss4.png" class="img-rounded"><br><br>
+      <p class="lead">Click the Add button in the top left hand corner...</p>
+      <img src="./img/ss5.png" class="img-rounded"><br>
+      <h1>You did it! Enjoy using SportsViz on your mobile device!</h1>
+      <p class="lead">The best part? You never have to update it!</p>
  
- 
-
- 
- 
-    
+      
+    </div>
   </body>
  <div id="buffer"></div>
   <footer>
